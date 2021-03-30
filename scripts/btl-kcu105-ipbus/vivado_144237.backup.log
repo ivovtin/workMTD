@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct  5 16:24:31 2020
+# Process ID: 144237
+# Current directory: /home/software/mtd-daq/btl-kcu105-ipbus
+# Command line: vivado
+# Log file: /home/software/mtd-daq/btl-kcu105-ipbus/vivado.log
+# Journal file: /home/software/mtd-daq/btl-kcu105-ipbus/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/msahin/btl_2link_v4/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 6740.602 ; gain = 244.434 ; free physical = 223 ; free virtual = 3611
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A0E547
+set_property PROGRAM.FILE {/home/msahin/btl_2link_v4/project_1/project_1.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/msahin/btl_2link_v4/project_1/project_1.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/msahin/btl_2link_v4/project_1/project_1.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 18:42:17 2020...
