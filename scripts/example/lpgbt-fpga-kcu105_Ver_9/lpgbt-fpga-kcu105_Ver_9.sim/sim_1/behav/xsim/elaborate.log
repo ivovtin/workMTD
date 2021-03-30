@@ -1,0 +1,58 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 356372dfd9e340939e51d05c20bffed3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SCA_work_TB_behav xil_defaultlib.SCA_work_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.ipbus
+Compiling package xil_defaultlib.ipbus_reg_types
+Compiling package xil_defaultlib.ipbus_decode_ipbus_example
+Compiling package xil_defaultlib.prbs_pattern_generator
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.sca_pkg
+Compiling package xil_defaultlib.ipbus_trans_decl
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.gbt_rx_checker [\gbt_rx_checker(seed_length=31,n...]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_fabric_sel [\ipbus_fabric_sel(nslv=22,sel_wi...]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_ctrlreg_v [ipbus_ctrlreg_v_default]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_reg_v [ipbus_reg_v_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture rtl of entity xil_defaultlib.ipbus_bram [ipbus_bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.prbs [\prbs(seed="00000000000000010100...]
+Compiling architecture rtl of entity xil_defaultlib.ipBUS_EC_bram [ipbus_ec_bram_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_tx [sca_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.sca_deserializer [sca_deserializer_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_rx_fifo [sca_rx_fifo_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_rx [sca_rx_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_top [sca_top_default]
+Compiling architecture behaviour of entity xil_defaultlib.ic_tx [\ic_tx(g_fifo_depth=12)\]
+Compiling architecture behaviour of entity xil_defaultlib.ic_deserializer [ic_deserializer_default]
+Compiling architecture behavioral of entity xil_defaultlib.ic_rx_fifo [\ic_rx_fifo(g_fifo_depth=12)\]
+Compiling architecture behaviour of entity xil_defaultlib.ic_rx [\ic_rx(g_fifo_depth=12)\]
+Compiling architecture behaviour of entity xil_defaultlib.ic_top [\ic_top(g_tolpgbt=1,g_fifo_depth...]
+Compiling architecture behaviour of entity xil_defaultlib.gbtsc_top [\gbtsc_top(g_ic_fifo_depth=12,g_...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(0,15)\]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_clock_div [ipbus_clock_div_default]
+Compiling architecture rtl of entity xil_defaultlib.led_stretcher [led_stretcher_default]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_example [ipbus_example_default]
+Compiling architecture rtl of entity xil_defaultlib.payload [payload_default]
+Compiling architecture behavioral of entity xil_defaultlib.sca_work_tb
+Built simulation snapshot SCA_work_TB_behav

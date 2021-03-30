@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../../../ipBUS_Lib/sources_1/ip/temac_gbe_v9_0/synth/temac_gbe_v9_0_block.vhd" \
+"../../../../../../ipBUS_Lib/sources_1/ip/temac_gbe_v9_0/synth/temac_gbe_v9_0.vhd" \
+
+nosort

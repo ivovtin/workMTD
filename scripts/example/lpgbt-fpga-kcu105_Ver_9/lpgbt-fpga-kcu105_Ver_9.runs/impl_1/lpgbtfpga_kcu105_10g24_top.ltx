@@ -1,0 +1,1321 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "125000003"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "vio_debug_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "F0342C272AA857EC946FBE4ABFE90DA9",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "lpgbtfpga_downlinkrdy_s",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "lpgbtfpga_uplinkrdy_s",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "downlink_gen_rdy_s",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "downlink_gen_rdy_s[15]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[14]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[13]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[12]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[11]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[10]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[9]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[8]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[7]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[6]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[5]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[4]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[3]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[2]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[1]"
+                                            },
+                                            {
+                                                "name": "downlink_gen_rdy_s[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 27,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "uperror_detected_s",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "uperror_detected_s[27]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[26]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[25]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[24]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[23]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[22]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[21]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[20]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[19]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[18]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[17]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[16]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[15]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[14]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[13]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[12]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[11]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[10]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[9]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[8]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[7]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[6]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[5]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[4]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[3]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[2]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[1]"
+                                            },
+                                            {
+                                                "name": "uperror_detected_s[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "ff_tx_prsnt_n_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in5",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "ff_rx_prsnt_n_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in6",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "ff_tx_int_n_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in7",
+                                "id": 7,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "ff_rx_int_n_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 8,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "lpgbtfpga_downlinkrst_s",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 9,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "uplinkRst_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 10,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "downLinkBypassInterleaver_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 11,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "downLinkBypassFECEncoder_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out4",
+                                "id": 12,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "downLinkBypassScrambler_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out5",
+                                "id": 13,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "ff_tx_select_n_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out6",
+                                "id": 14,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "ff_rx_select_n_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out7",
+                                "id": 15,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "uplinkBypassInterleaver_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out8",
+                                "id": 16,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "uplinkBypassFECEncoder_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out9",
+                                "id": 17,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "uplinkBypassScrambler_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out10",
+                                "id": 18,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "mgt_txcalib_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mgt_txcalib_i[6]"
+                                            },
+                                            {
+                                                "name": "mgt_txcalib_i[5]"
+                                            },
+                                            {
+                                                "name": "mgt_txcalib_i[4]"
+                                            },
+                                            {
+                                                "name": "mgt_txcalib_i[3]"
+                                            },
+                                            {
+                                                "name": "mgt_txcalib_i[2]"
+                                            },
+                                            {
+                                                "name": "mgt_txcalib_i[1]"
+                                            },
+                                            {
+                                                "name": "mgt_txcalib_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out11",
+                                "id": 19,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "mgt_txcaliben_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out12",
+                                "id": 20,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "generator_rst_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out13",
+                                "id": 21,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "config_group0_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "config_group0_i[1]"
+                                            },
+                                            {
+                                                "name": "config_group0_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out14",
+                                "id": 22,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "config_group1_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "config_group1_i[1]"
+                                            },
+                                            {
+                                                "name": "config_group1_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out15",
+                                "id": 23,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "config_group2_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "config_group2_i[1]"
+                                            },
+                                            {
+                                                "name": "config_group2_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out16",
+                                "id": 24,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "config_group3_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "config_group3_i[1]"
+                                            },
+                                            {
+                                                "name": "config_group3_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out17",
+                                "id": 25,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "reset_checker_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out18",
+                                "id": 26,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[0]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[0][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[0][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out19",
+                                "id": 27,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 19,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[1]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[1][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[1][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out20",
+                                "id": 28,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 20,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[2]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[2][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[2][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out21",
+                                "id": 29,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 21,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[3]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[3][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[3][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out22",
+                                "id": 30,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 22,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[4]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[4][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[4][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out23",
+                                "id": 31,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 23,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[5]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[5][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[5][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out24",
+                                "id": 32,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 24,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[6]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[6][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[6][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out25",
+                                "id": 33,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 25,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[7]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[7][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[7][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out26",
+                                "id": 34,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 26,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[8]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[8][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[8][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out27",
+                                "id": 35,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 27,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[9]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[9][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[9][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out28",
+                                "id": 36,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 28,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[10]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[10][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[10][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out29",
+                                "id": 37,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 29,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[11]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[11][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[11][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out30",
+                                "id": 38,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 30,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[12]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[12][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[12][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out31",
+                                "id": 39,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 31,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[13]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[13][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[13][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out32",
+                                "id": 40,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 32,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[14]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[14][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[14][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out33",
+                                "id": 41,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 33,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[15]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[15][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[15][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out34",
+                                "id": 42,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 34,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[16]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[16][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[16][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out35",
+                                "id": 43,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 35,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[17]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[17][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[17][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out36",
+                                "id": 44,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 36,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[18]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[18][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[18][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out37",
+                                "id": 45,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 37,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[20]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[20][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[20][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out38",
+                                "id": 46,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 38,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[21]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[21][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[21][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out39",
+                                "id": 47,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 39,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[22]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[22][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[22][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out40",
+                                "id": 48,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 40,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[23]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[23][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[23][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out41",
+                                "id": 49,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 41,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[24]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[24][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[24][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out42",
+                                "id": 50,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 42,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[25]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[25][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[25][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out43",
+                                "id": 51,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 43,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[26]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[26][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[26][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out44",
+                                "id": 52,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 44,
+                                "nets": [
+                                    {
+                                        "name": "elink_config_i[27]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "elink_config_i[27][1]"
+                                            },
+                                            {
+                                                "name": "elink_config_i[27][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out45",
+                                "id": 53,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 45,
+                                "nets": [
+                                    {
+                                        "name": "ff_tx_reset_n_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out46",
+                                "id": 54,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 46,
+                                "nets": [
+                                    {
+                                        "name": "ff_rx_reset_n_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

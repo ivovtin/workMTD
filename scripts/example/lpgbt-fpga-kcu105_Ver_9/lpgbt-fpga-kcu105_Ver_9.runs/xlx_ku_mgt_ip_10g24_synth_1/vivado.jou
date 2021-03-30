@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 23 12:02:11 2019
+# Process ID: 20733
+# Current directory: /home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105-10g24.runs/xlx_ku_mgt_ip_10g24_synth_1
+# Command line: vivado -log xlx_ku_mgt_ip_10g24.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xlx_ku_mgt_ip_10g24.tcl
+# Log file: /home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105-10g24.runs/xlx_ku_mgt_ip_10g24_synth_1/xlx_ku_mgt_ip_10g24.vds
+# Journal file: /home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105-10g24.runs/xlx_ku_mgt_ip_10g24_synth_1/vivado.jou
+#-----------------------------------------------------------
+source xlx_ku_mgt_ip_10g24.tcl -notrace

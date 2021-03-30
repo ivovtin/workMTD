@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  5 10:08:05 2020
+# Process ID: 78782
+# Current directory: /home/alkozyre/cernbox/Alexey_BTL/scripts/example
+# Command line: vivado
+# Log file: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.log
+# Journal file: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 18
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_13/lpgbt-fpga-kcu105_Ver_13.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+save_project_as lpgbt-fpga-kcu105_Ver_14 /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14 -force
+import_files
+launch_simulation
+open_wave_config /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.srcs/sim_1/imports/lpgbt-fpga-kcu105_Ver_13/SCA_work_TB_behav.wcfg
+source SCA_work_TB.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 20 us
+current_wave_config {SCA_work_TB_behav.wcfg}
+add_wave {{/SCA_work_TB/PayLD/example/lpGBTsc_inst/sca_inst/\sca_gen(0)\/tx_inst/offset_pos_s}} 
+relaunch_sim
+run 20 us
+current_wave_config {SCA_work_TB_behav.wcfg}
+add_wave {{/SCA_work_TB/PayLD/example/lpGBTsc_inst/sca_inst/\sca_gen(0)\/tx_inst/hdlc_state}} 
+relaunch_sim
+run 20 us
+relaunch_sim
+current_wave_config {SCA_work_TB_behav.wcfg}
+add_wave {{/SCA_work_TB/PayLD/example/lpGBTsc_inst/sca_inst/\sca_gen(0)\/tx_inst/reg_pos_s}} 
+current_wave_config {SCA_work_TB_behav.wcfg}
+add_wave {{/SCA_work_TB/PayLD/example/lpGBTsc_inst/sca_inst/\sca_gen(0)\/tx_inst/high_lvl_cnter_s}} 
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+current_wave_config {SCA_work_TB_behav.wcfg}
+add_wave {{/SCA_work_TB/PayLD/example/lpGBTsc_inst/sca_inst/\sca_gen(0)\/tx_inst/IDLE_PACKET}} 
+current_wave_config {SCA_work_TB_behav.wcfg}
+add_wave {{/SCA_work_TB/PayLD/example/lpGBTsc_inst/sca_inst/\sca_gen(0)\/tx_inst/DELIMITER_PACKET}} 
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+update_compile_order -fileset sources_1
+run 20 us
+update_compile_order -fileset sources_1
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+save_wave_config {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.srcs/sim_1/imports/lpgbt-fpga-kcu105_Ver_13/SCA_work_TB_behav.wcfg}
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 18
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 18
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 18
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 18
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 18
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 18
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku040_0] 0]
+open_run impl_1
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_14/lpgbt-fpga-kcu105_Ver_14.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+close_hw

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<node id="TOP">
+  <node id="TxBRAM" address="0x4000"/>
+  <node id="SSR" address="0x3"/>
+  <node id="PC" address="0x2"/>
+  <node id="EC" address="0x4"/>
+  <node id="RREC" address="0x5"/>
+  <node id="RxBRAM" address="0x5000"/>
+  <node id="Qwe" address="0x6000"/>
+</node>

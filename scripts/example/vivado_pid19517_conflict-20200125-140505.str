@@ -1,0 +1,1793 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 19517
+License: Customer
+
+Current time: 	Sat Jan 25 14:05:02 CET 2020
+Time zone: 	Central European Standard Time (Europe/Zurich)
+
+OS: CentOS Linux release 7.6.1810 (Core)
+OS Version: 3.10.0-957.27.2.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: :4
+Screen size: 1360x768
+Screen resolution (DPI): 95
+Available screens: 1
+Available disk space: 35 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/software/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/home/software/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	alkozyre
+User home directory: /home/alkozyre
+User working directory: /home/alkozyre/cernbox/Alexey_BTL/scripts/example
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/software/Xilinx/Vivado
+HDI_APPROOT: /home/software/Xilinx/Vivado/2018.3
+RDI_DATADIR: /home/software/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /home/software/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/alkozyre/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/alkozyre/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/alkozyre/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/home/software/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.log
+Vivado journal file location: 	/home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-19517-ceacmsfw
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/software/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2112@lxlicen01:2112@lxlicen02:2112@lxlicen03
+XILINX_DSP: /home/software/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /home/software/Xilinx/Vivado/2018.3
+XILINX_SDK: /home/software/Xilinx/SDK/2018.3
+XILINX_VIVADO: /home/software/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /home/software/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	211 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,155 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,155 MB. GUI used memory: 40 MB. Current time: 1/25/20, 2:05:04 PM CET
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr", 0); // q (Q, cp)
+// [GUI Memory]: 53 MB (+53054kb) [00:00:11]
+// [Engine Memory]: 5,207 MB (+5308336kb) [00:00:11]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 95 MB (+41399kb) [00:00:17]
+// [GUI Memory]: 111 MB (+11242kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  2269 ms.
+// Tcl Message: open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: lpgbt-fpga-kcu105_Ver_8; location: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8; part: xcku040-ffva1156-2-e
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 120 MB (+4404kb) [00:00:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cp)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// HMemoryUtils.trashcanNow. Engine heap size: 5,408 MB. GUI used memory: 58 MB. Current time: 1/25/20, 2:05:19 PM CET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 16 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 630, 115); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 630, 115, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 203, 110); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 304, 110); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 304, 110, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 627, 143); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 627, 143, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 310, 143); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 310, 143, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 625, 158); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 625, 158, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 284, 160); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 284, 160, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,438 MB. GUI used memory: 61 MB. Current time: 1/25/20, 2:06:34 PM CET
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 14:06:53 2020] Launched synth_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/synth_1/runme.log [Sat Jan 25 14:06:53 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 100 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-to [get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[*]/R}]'. [/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl:107]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Vivado 12-4739];-;;-;16;-;DetailedMsg;-;Object(s) specified do not exist in elaborated/synthesized design. As a result, this command was not applied.;-;;-;16;-;Resolution;-;Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-to [get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[*]/R}]'. [/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl:107]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl;-;;-;16;-;line;-;107;-;;-;16;-;"); // ah (Q, cp)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Elapsed time: 17 seconds
+selectCodeEditor("kcu105_basex.tcl", 3, 31); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("kcu105_basex.tcl", 607, 92); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 607, 92, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("kcu105_basex.tcl", 723, 99); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 723, 99, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 48 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 128 MB (+1373kb) [00:05:23]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 14:10:20 2020] Launched synth_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/synth_1/runme.log [Sat Jan 25 14:10:20 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 202 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 433 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProjectSummaryTimingPanel_OPEN_TIMING_SUMMARY_REPORT, "Implemented Timing Report"); // h (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+selectButton("PAResourceOtoP.ProjectSummaryTimingPanel_DESIGN_MUST_BE_OPEN_TO_VIEW_TIMING_OK", "OK"); // JButton (C, I)
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 65 MB. Current time: 1/25/20, 2:21:14 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,972 MB. GUI used memory: 60 MB. Current time: 1/25/20, 2:21:34 PM CET
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 6,156 MB (+722237kb) [00:16:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,163 MB. GUI used memory: 60 MB. Current time: 1/25/20, 2:21:36 PM CET
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/software/Xilinx/Vivado/2018.3/data/parts/xilinx/kintexu/devint/kintexu/xcku040/xcku040.xgd; ZipEntry: xcku040_detail.xgd elapsed time: 0.9s
+// [GUI Memory]: 145 MB (+11473kb) [00:16:43]
+// [Engine Memory]: 6,516 MB (+54883kb) [00:16:43]
+// Device: addNotify
+// [GUI Memory]: 154 MB (+1515kb) [00:16:44]
+// DeviceView Instantiated
+// [GUI Memory]: 169 MB (+7601kb) [00:16:44]
+// WARNING: HEventQueue.dispatchEvent() is taking  1528 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 241 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.80 . Memory (MB): peak = 7501.297 ; gain = 26.676 ; free physical = 25481 ; free virtual = 39716 
+// Tcl Message: Restored from archive | CPU: 0.850000 secs | Memory: 23.659752 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.83 . Memory (MB): peak = 7501.297 ; gain = 26.676 ; free physical = 25479 ; free virtual = 39714 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7501.297 ; gain = 0.000 ; free physical = 25480 ; free virtual = 39715 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 18 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 4 instances   IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances   SRLC32E => SRL16E: 1 instances  
+// ExpRunCommands.openImplResults elapsed time: 36.7s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.6s
+// Tcl Message: open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 7865.465 ; gain = 1019.855 ; free physical = 25267 ; free virtual = 39505 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.1
+// Device view-level: 0.1
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 179 MB (+1372kb) [00:16:46]
+// [GUI Memory]: 191 MB (+3851kb) [00:16:48]
+// [GUI Memory]: 201 MB (+147kb) [00:16:48]
+// [GUI Memory]: 212 MB (+847kb) [00:16:48]
+// WARNING: HEventQueue.dispatchEvent() is taking  2922 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+// 'dQ' command handler elapsed time: 43 seconds
+// S (cp): Critical Messages: addNotify
+// Elapsed time: 43 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+// [GUI Memory]: 227 MB (+4662kb) [00:16:56]
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5); // a (Q, cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1]", 11, true); // a (Q, cp) - Node
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1]", 11); // a (Q, cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1, Setup -1.948 ns]", 12, false); // a (Q, cp)
+// PAPropertyPanels.initPanels (Path 101) elapsed time: 0.6s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 101 ; -1.9480759 ; 15 ; 32 ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[25]/R ; 4.8210006 ; 2.475 ; 2.346 ; 3.125 ; txoutclk_out[0]_1 ; txoutclk_out[0]_1 ;  ; 0.03535534", 0, "payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C", 4); // i (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,574 MB. GUI used memory: 158 MB. Current time: 1/25/20, 2:22:02 PM CET
+// Elapsed time: 11 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 101 ; -1.9480759 ; 15 ; 32 ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[25]/R ; 4.8210006 ; 2.475 ; 2.346 ; 3.125 ; txoutclk_out[0]_1 ; txoutclk_out[0]_1 ;  ; 0.03535534", 0, "payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C", 4, false, false, false, true, false); // i (Q, cp) - Popup Trigger
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MAXIMUM_DELAY, "Set Maximum Delay"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenuItem(PAResourceOtoP.PathMenu_STARTPOINT_TO_ENDPOINT, "Startpoint to Endpoint..."); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_XDC_SET_MULTICYCLE_PATH
+// ck (cp): Set Multicycle Path: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,958 MB. GUI used memory: 159 MB. Current time: 1/25/20, 2:22:19 PM CET
+// Elapsed time: 12 seconds
+setText(PAResourceTtoZ.ToTargetSpecifierPanel_SPECIFY_END_POINTS, "[get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[25]/R}]"); // Y (N, ck)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ck)
+// 'A' command handler elapsed time: 12 seconds
+// [Engine Memory]: 7,294 MB (+473850kb) [00:17:33]
+dismissDialog("Set Multicycle Path"); // ck (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "kcu105_basex.tcl", 3); // k (j, cp)
+selectCodeEditor("kcu105_basex.tcl", 311, 85); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'v'); // cl (w, cp)
+// RouteApi::initDelayMediator elapsed time: 56.5s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 26 seconds
+selectCodeEditor("kcu105_basex.tcl", 4, 52); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 0, 50); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 4, 68); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 1, 59); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 2, 68); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 752, 123); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 11, 103); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 9, 98); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 10, 110); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 14:23:38 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 256 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,372 MB. GUI used memory: 117 MB. Current time: 1/25/20, 2:27:58 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 7,372 MB. GUI used memory: 118 MB. Current time: 1/25/20, 2:27:59 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1380 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 122 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock_utils.tcl]", 12, false); // B (D, cp)
+// ah (cp): Implementation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProjectSummaryTimingPanel_OPEN_TIMING_SUMMARY_REPORT, "Implemented Timing Report"); // h (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+selectButton("PAResourceOtoP.ProjectSummaryTimingPanel_DESIGN_MUST_BE_OPEN_TO_VIEW_TIMING_OK", "OK"); // JButton (C, I)
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 7,355 MB. GUI used memory: 67 MB. Current time: 1/25/20, 2:30:19 PM CET
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/software/Xilinx/Vivado/2018.3/data/parts/xilinx/kintexu/devint/kintexu/xcku040/xcku040.xgd; ZipEntry: xcku040_detail.xgd elapsed time: 0.8s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 241 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:00.92 . Memory (MB): peak = 8727.535 ; gain = 0.000 ; free physical = 24667 ; free virtual = 38908 
+// Tcl Message: Restored from archive | CPU: 0.990000 secs | Memory: 23.552750 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:00.94 . Memory (MB): peak = 8727.535 ; gain = 0.000 ; free physical = 24666 ; free virtual = 38906 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8727.535 ; gain = 0.000 ; free physical = 24665 ; free virtual = 38906 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 18 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 4 instances   IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances   SRLC32E => SRL16E: 1 instances  
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 8774.559 ; gain = 47.023 ; free physical = 24624 ; free virtual = 38864 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.1
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.6s
+// Device view-level: 0.1
+// TclEventType: POWER_UPDATED
+// RouteApi::initDelayMediator elapsed time: 2.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2466 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 16 seconds
+// S (cp): Critical Messages: addNotify
+// Elapsed time: 16 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5); // a (Q, cp)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1]", 11); // a (Q, cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1, Setup -1.997 ns]", 12, false); // a (Q, cp)
+// PAPropertyPanels.initPanels (Path 101) elapsed time: 0.2s
+// HMemoryUtils.trashcanNow. Engine heap size: 7,371 MB. GUI used memory: 163 MB. Current time: 1/25/20, 2:30:54 PM CET
+// Elapsed time: 21 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 101 ; -1.996876 ; 16 ; 32 ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/data_o_reg[6]/CE ; 4.9830003 ; 2.4919999 ; 2.4910002 ; 3.125 ; txoutclk_out[0]_1 ; txoutclk_out[0]_1 ;  ; 0.03535534", 0, "payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C", 4, false, false, false, true, false); // i (Q, cp) - Popup Trigger
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MAXIMUM_DELAY, "Set Maximum Delay"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenuItem(PAResourceOtoP.PathMenu_STARTPOINT_TO_ENDPOINT, "Startpoint to Endpoint..."); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_XDC_SET_MULTICYCLE_PATH
+// ck (cp): Set Multicycle Path: addNotify
+setText(PAResourceEtoH.FromTargetSpecifierPanel_SPECIFY_START_POINTS, "[get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].tx_inst/data_out_reg[1]/C}]"); // Y (N, ck)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ck)
+// 'A' command handler elapsed time: 9 seconds
+dismissDialog("Set Multicycle Path"); // ck (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "kcu105_basex.tcl", 3); // k (j, cp)
+selectCodeEditor("kcu105_basex.tcl", 93, 92); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'v'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 1, 6); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 81, 46); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 0, 20); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'c'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 13, 127); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'v'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 1, 126); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'c'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 247, 81); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'v'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 811, 78); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 249, 98); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 249, 91); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 245, 92); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'v'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 813, 98); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 616, 130); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 14:32:34 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// Elapsed time: 11 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,371 MB. GUI used memory: 121 MB. Current time: 1/25/20, 2:32:49 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 7,371 MB. GUI used memory: 121 MB. Current time: 1/25/20, 2:32:49 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1305 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 410 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Implementation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProjectSummaryTimingPanel_OPEN_TIMING_SUMMARY_REPORT, "Implemented Timing Report"); // h (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+selectButton("PAResourceOtoP.ProjectSummaryTimingPanel_DESIGN_MUST_BE_OPEN_TO_VIEW_TIMING_OK", "OK"); // JButton (C, I)
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 7,355 MB. GUI used memory: 71 MB. Current time: 1/25/20, 2:39:58 PM CET
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/software/Xilinx/Vivado/2018.3/data/parts/xilinx/kintexu/devint/kintexu/xcku040/xcku040.xgd; ZipEntry: xcku040_detail.xgd elapsed time: 0.7s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 241 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.81 . Memory (MB): peak = 8886.613 ; gain = 0.000 ; free physical = 24479 ; free virtual = 38719 
+// Tcl Message: Restored from archive | CPU: 0.880000 secs | Memory: 23.693481 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.85 . Memory (MB): peak = 8886.613 ; gain = 0.000 ; free physical = 24476 ; free virtual = 38717 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8886.613 ; gain = 0.000 ; free physical = 24476 ; free virtual = 38717 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 18 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 4 instances   IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances   SRLC32E => SRL16E: 1 instances  
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 8886.613 ; gain = 0.000 ; free physical = 24486 ; free virtual = 38726 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.1
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.5s
+// Device view-level: 0.1
+// TclEventType: POWER_UPDATED
+// RouteApi::initDelayMediator elapsed time: 2.1s
+// WARNING: HEventQueue.dispatchEvent() is taking  2485 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 16 seconds
+// S (cp): Critical Messages: addNotify
+// Elapsed time: 16 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5); // a (Q, cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1]", 11, true); // a (Q, cp) - Node
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1]", 11); // a (Q, cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, txoutclk_out[0]_1, Setup -2.176 ns]", 12, false); // a (Q, cp)
+// PAPropertyPanels.initPanels (Path 101) elapsed time: 0.2s
+// Elapsed time: 13 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 101 ; -2.1761947 ; 14 ; 32 ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[2]/C ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/data_o_reg[6]/CE ; 5.0529995 ; 2.4390001 ; 2.614 ; 3.125 ; txoutclk_out[0]_1 ; txoutclk_out[0]_1 ;  ; 0.03535534", 0, "payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[2]/C", 4); // i (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,371 MB. GUI used memory: 165 MB. Current time: 1/25/20, 2:40:29 PM CET
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 101 ; -2.1761947 ; 14 ; 32 ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[2]/C ; payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/data_o_reg[6]/CE ; 5.0529995 ; 2.4390001 ; 2.614 ; 3.125 ; txoutclk_out[0]_1 ; txoutclk_out[0]_1 ;  ; 0.03535534", 0, "payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[2]/C", 4, false, false, false, true, false); // i (Q, cp) - Popup Trigger
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ac (al, cp)
+selectMenuItem(PAResourceOtoP.PathMenu_STARTPOINT_TO_ENDPOINT, "Startpoint to Endpoint..."); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_XDC_SET_MULTICYCLE_PATH
+// ck (cp): Set Multicycle Path: addNotify
+setText(PAResourceEtoH.FromTargetSpecifierPanel_SPECIFY_START_POINTS, "[get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[2]/C}]"); // Y (N, ck)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ck)
+// 'A' command handler elapsed time: 6 seconds
+dismissDialog("Set Multicycle Path"); // ck (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "kcu105_basex.tcl", 3); // k (j, cp)
+selectCodeEditor("kcu105_basex.tcl", 425, 81); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 382, 81); // cl (w, cp)
+typeControlKey((HResource) null, "kcu105_basex.tcl", 'v'); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 600, 84); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 9, 55); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 8, 68); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,374 MB. GUI used memory: 123 MB. Current time: 1/25/20, 2:41:25 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 7,374 MB. GUI used memory: 124 MB. Current time: 1/25/20, 2:41:25 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1282 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 14:41:32 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 404 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 14:48:20 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 224 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  6 2018-23:53:53     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1635 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308957536 
+// HMemoryUtils.trashcanNow. Engine heap size: 7,593 MB. GUI used memory: 79 MB. Current time: 1/25/20, 2:52:11 PM CET
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: current_hw_device [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+dismissDialog("Auto Connect"); // bx (cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210308957536 (1) ; Open", 1, "xilinx_tcf/Digilent/210308957536 (1)", 0, true); // t (Q, cp) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210308957536 (1) ; Open", 1, "xilinx_tcf/Digilent/210308957536 (1)", 0, true, false, false, false, true, false); // t (Q, cp) - Popup Trigger - Node
+collapseTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210308957536 (1) ; Open", 1); // t (Q, cp)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210308957536 (1) ; Open", 1); // t (Q, cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (0) ; Programmed", 2, "xcku040_0 (0)", 0, false); // t (Q, cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (0) ; Programmed", 2, "xcku040_0 (0)", 0, false, false, false, false, true, false); // t (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xcku040_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 184 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 317, 158); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 317, 158, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 133 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 7,660 MB. GUI used memory: 80 MB. Current time: 1/25/20, 2:57:50 PM CET
+setFileChooser("/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_5/lpgbt-fpga-kcu105_Ver_5.xpr");
+// 'i' command handler elapsed time: 10 seconds
+// [Engine Memory]: 7,660 MB (+1135kb) [00:53:01]
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (C, I)
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_5/lpgbt-fpga-kcu105_Ver_5.xpr. Version: Vivado v2018.3 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_5/lpgbt-fpga-kcu105_Ver_5.xpr 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1455 ms.
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: lpgbt-fpga-kcu105_Ver_5; location: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_5; part: xcku040-ffva1156-2-e
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,703 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:58:02 PM CET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: current_project lpgbt-fpga-kcu105_Ver_8 
+// Tcl Message: close_project 
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cp)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr");
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,672 MB. GUI used memory: 69 MB. Current time: 1/25/20, 2:58:34 PM CET
+// Opening Vivado Project: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: lpgbt-fpga-kcu105_Ver_8; location: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8; part: xcku040-ffva1156-2-e
+// 'i' command handler elapsed time: 15 seconds
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj SCA_work_TB_vlog.prj INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module blk_mem_gen_0 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl xvhdl --incr --relax -prj SCA_work_TB_vhdl.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: /home/software/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 356372dfd9e340939e51d05c20bffed3 --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SCA_work_TB_behav xil_defaultlib.SCA_work_TB xil_defaultlib.glbl -log elaborate.log  Using 8 slave threads. Starting static elaboration Completed static elaboration Starting simulation data flow analysis Completed simulation data flow analysis 
+// Tcl Message: Built simulation snapshot SCA_work_TB_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim/xsim.dir/SCA_work_TB_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Sat Jan 25 14:59:03 2020... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "SCA_work_TB_behav -key {Behavioral:sim_1:Functional:SCA_work_TB} -tclbatch {SCA_work_TB.tcl} -view {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/imports/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1/EC_bits_TB_behav.wcfg} -view {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/imports/lpgbt-fpga-kcu105_Ver_3/SCA_work_TB_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,733 MB. GUI used memory: 85 MB. Current time: 1/25/20, 2:59:06 PM CET
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/imports/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1/EC_bits_TB_behav.wcfg 
+// Tcl Message: open_wave_config /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/imports/lpgbt-fpga-kcu105_Ver_3/SCA_work_TB_behav.wcfg 
+// Tcl Message: source SCA_work_TB.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'SCA_work_TB_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 9219.309 ; gain = 1.055 ; free physical = 23616 ; free virtual = 38020 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,733 MB. GUI used memory: 80 MB. Current time: 1/25/20, 2:59:11 PM CET
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 7,743 MB. GUI used memory: 137 MB. Current time: 1/25/20, 2:59:16 PM CET
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:59:20 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:59:20 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:59:20 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:59:21 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:59:21 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 82 MB. Current time: 1/25/20, 2:59:21 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 89 MB. Current time: 1/25/20, 2:59:23 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, lpgbtfpga_downlinkEcData_s[1:0]]", 6, true); // a (r, cp) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 81 MB. Current time: 1/25/20, 2:59:28 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 113 MB. Current time: 1/25/20, 2:59:32 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 83 MB. Current time: 1/25/20, 2:59:32 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 84 MB. Current time: 1/25/20, 2:59:32 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 83 MB. Current time: 1/25/20, 2:59:32 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,745 MB. GUI used memory: 83 MB. Current time: 1/25/20, 2:59:32 PM CET
+// Elapsed time: 20 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd), payload : payload(rtl) (payload_example.vhd)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd), payload : payload(rtl) (payload_example.vhd), example : ipbus_example(rtl) (ipbus_example.vhd)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd), payload : payload(rtl) (payload_example.vhd), example : ipbus_example(rtl) (ipbus_example.vhd), slave5 : ipbus_bram(rtl) (ipbus_bram.vhd)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd), payload : payload(rtl) (payload_example.vhd), example : ipbus_example(rtl) (ipbus_example.vhd)]", 8); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SCA_work_TB(Behavioral) (SCA_work_TB.vhd)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SCA_work_TB(Behavioral) (SCA_work_TB.vhd), PayLD : payload(rtl) (payload_example.vhd)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("SCA_work_TB.vhd", 444, 198); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SCA_work_TB_behav.wcfg", 1); // k (j, cp)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (cp):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// HMemoryUtils.trashcanNow. Engine heap size: 7,739 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:00:38 PM CET
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: xvlog --incr --relax -prj SCA_work_TB_vlog.prj xvhdl --incr --relax -prj SCA_work_TB_vhdl.prj 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/new/SCA_work_TB.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'SCA_work_TB' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim' 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Built simulation snapshot SCA_work_TB_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:45 PM CET
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// 'a' command handler elapsed time: 9 seconds
+dismissDialog("Relaunch Simulation"); // b (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 133 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 90 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:00:53 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:54 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:55 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:00:55 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:00:55 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:00:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:00:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:00:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:00:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:00:56 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, lpGBT_SCA_start_cmd_s]", 7, false); // a (r, cp)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, lpGBT_SCA_rst_cmd_s]", 5, false); // a (r, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:01:01 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:01:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 14 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, lpGBT_SCA_connect_cmd_s]", 6, false); // a (r, cp)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, lpGBT_SCA_start_cmd_s]", 7, false); // a (r, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:01:16 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 20 seconds
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "SCA_work_TB ; SCA_work_TB(Behavioral) ; VHDL Entity", 0); // d (Q, cp)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "PayLD ; payload(rtl) ; VHDL Entity", 1, "PayLD", 0, true); // d (Q, cp) - Node
+// Elapsed time: 11 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTableHeader(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Value", 1); // m (c, cp)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Tx_EC_bits_o[1:0] ; 3 ; Array", 15, "Tx_EC_bits_o[1:0]", 0, true); // m (c, cp) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Tx_EC_bits_o[1:0] ; 3 ; Array", 15, "Tx_EC_bits_o[1:0]", 0, true, false, false, false, true, false); // m (c, cp) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // ac (al, cp)
+selectMenuItem((HResource) null, "Add to Wave Window"); // af (al, cp)
+// Tcl Command: 'current_wave_config {SCA_work_TB_behav.wcfg}'
+// Tcl Message: current_wave_config {SCA_work_TB_behav.wcfg} 
+// Tcl Message: SCA_work_TB_behav.wcfg 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: add_wave {{/SCA_work_TB/PayLD/Tx_EC_bits_o}}  
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:09 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:02:10 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 105 MB. Current time: 1/25/20, 3:02:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:02:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 90 MB. Current time: 1/25/20, 3:02:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:02:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:02:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:02:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:02:16 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:02:16 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:02:17 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:17 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:02:18 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:02:18 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:18 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 13 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Tx_EC_bits_o[1:0]]", 13, true); // a (r, cp) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Tx_EC_bits_o[1:0]]", 13, true); // a (r, cp) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:27 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 96 MB. Current time: 1/25/20, 3:02:35 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:02:35 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:02:35 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 20 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Tx_EC_bits_o[1:0]]", 13, true, false, false, false, true, false); // a (r, cp) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // ac (al, cp)
+selectMenuItem((HResource) null, "Binary"); // T (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:02:45 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:48 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:49 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:02:49 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:49 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:50 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 87 MB. Current time: 1/25/20, 3:02:50 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:02:51 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:02:51 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:02:55 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 93 MB. Current time: 1/25/20, 3:02:57 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 97 MB. Current time: 1/25/20, 3:02:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 90 MB. Current time: 1/25/20, 3:02:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:03:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:03:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 91 MB. Current time: 1/25/20, 3:03:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:03:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:03:03 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 90 MB. Current time: 1/25/20, 3:03:03 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 94 MB. Current time: 1/25/20, 3:03:06 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:03:11 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:03:11 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:03:12 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:03:12 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 91 MB. Current time: 1/25/20, 3:03:17 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:03:17 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 40 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:03:26 PM CET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd), payload : payload(rtl) (payload_example.vhd)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd), payload : payload(rtl) (payload_example.vhd)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("payload_example.vhd", 116, 130); // cl (w, cp)
+selectCodeEditor("payload_example.vhd", 116, 130, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "payload_example.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SCA_work_TB.vhd", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SCA_work_TB_behav.wcfg*", 1); // k (j, cp)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "PayLD ; payload(rtl) ; VHDL Entity", 1, "PayLD", 0, true); // d (Q, cp) - Node
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Objects_search"); // u (f, cp): TRUE
+setText("PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE_SEARCH_FIELD", "Tx_EC_bits_o"); // OverlayTextField (ay, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 132 MB. Current time: 1/25/20, 3:03:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:03:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:03:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:03:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 89 MB. Current time: 1/25/20, 3:03:59 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:04:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:04:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:04:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:04:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 86 MB. Current time: 1/25/20, 3:04:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:04:01 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 88 MB. Current time: 1/25/20, 3:04:01 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:01 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:01 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:02 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:02 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:02 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:02 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:03 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:03 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:04:03 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 84 MB. Current time: 1/25/20, 3:04:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 85 MB. Current time: 1/25/20, 3:04:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 82 MB. Current time: 1/25/20, 3:04:05 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:04:10 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 100 MB. Current time: 1/25/20, 3:04:16 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,763 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:04:16 PM CET
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - SCA_work_TB", "DesignTask.SIMULATION");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (cp)
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Cancel", "Cancel"); // JButton (C, I)
+selectButton(RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, "Waveform Viewer_waveform_save_configuration"); // B (f, cp)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/imports/lpgbt-fpga-kcu105_Ver_3/SCA_work_TB_behav.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SIMULATION_WAVEFORM, "Simulation Waveform"); // ac (cp)
+selectMenuItem(RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, "Save Configuration"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sim_1/imports/lpgbt-fpga-kcu105_Ver_3/SCA_work_TB_behav.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - SCA_work_TB", "DesignTask.SIMULATION");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bx (cp)
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "2 critical warnings"); // h (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "inst;-;lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST;-;;-;10;-;"); // ah (Q, cp)
+selectButton("PAResourceItoN.MsgUtils_TO_SELECT_THIS_OBJECT_YOU_MUST_OPEN_No", "No"); // JButton (C, I)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/xlx_ku_mgt_ip_10g24/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24.xdc;-;;-;16;-;line;-;57;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("xlx_ku_mgt_ip_10g24.xdc", 150, 42); // D (w, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 10); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kcu105_basex.tcl]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kcu105_basex.tcl]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "kcu105_basex.tcl", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xlx_ku_mgt_ip_10g24.xdc", 4); // k (j, cp)
+selectCodeEditor("xlx_ku_mgt_ip_10g24.xdc", 2, 26); // D (w, cp)
+typeControlKey((HResource) null, "xlx_ku_mgt_ip_10g24.xdc", 'c'); // D (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "kcu105_basex.tcl", 5); // k (j, cp)
+selectCodeEditor("kcu105_basex.tcl", 140, 50); // cl (w, cp)
+// Elapsed time: 28 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "set_property LOC"); // l (aT, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1); // B (D, cp)
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpgbtfpga_kcu105_10g24_top(behavioral) (lpgbtfpga_kcu105_10g24_top.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 205, 199); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 205, 217); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 422, 147); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 239, 68); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 239, 68, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 323, 160); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 323, 160, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 25 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,784 MB. GUI used memory: 83 MB. Current time: 1/25/20, 3:08:25 PM CET
+// Elapsed time: 16 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 85, 229); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 695, 205); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 689, 201); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 241, 278); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 415, 227); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 166, 239); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 165, 243); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 7, 290); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 63 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 302, 279); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 302, 279, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 86, 153); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 100, 285); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 90, 268); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'c'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 83, 157); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 86, 263); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'c'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 82, 159); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 171, 292); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 106, 264); // cl (w, cp)
+typeControlKey((HResource) null, "lpgbtfpga_kcu105_10g24_top.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 431, 310); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 8, 158); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 112, 217); // cl (w, cp)
+selectCodeEditor("lpgbtfpga_kcu105_10g24_top.vhd", 112, 217, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "payload_example.vhd", 3); // k (j, cp)
+selectCodeEditor("payload_example.vhd", 97, 232); // cl (w, cp)
+selectCodeEditor("payload_example.vhd", 97, 232, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Rx_data_o"); // l (aT, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ipbus_example.vhd", 1); // k (j, cp)
+selectCodeEditor("ipbus_example.vhd", 226, 88); // cl (w, cp)
+// Elapsed time: 42 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Rx_data_o"); // l (aT, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// A (cp): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,811 MB. GUI used memory: 79 MB. Current time: 1/25/20, 3:12:50 PM CET
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 15:12:50 2020] Launched synth_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/synth_1/runme.log [Sat Jan 25 15:12:51 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-to [get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[*]/R}]'. [/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl:108]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl;-;;-;16;-;line;-;108;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-to [get_pins {payload/example/lpGBTsc_inst/sca_inst/sca_gen[0].rx_inst/sca_deserializer_inst/cnter_reg[*]/R}]'. [/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl:108]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl;-;;-;16;-;line;-;108;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("kcu105_basex.tcl", 0, 64); // cl (w, cp)
+selectCodeEditor("kcu105_basex.tcl", 2, 83); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // X (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date 
+// Tcl Message: [Sat Jan 25 15:14:54 2020] Launched synth_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/synth_1/runme.log [Sat Jan 25 15:14:54 2020] Launched impl_1... Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 723 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  6 2018-23:53:53     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308957536 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: current_hw_device [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+dismissDialog("Auto Connect"); // bx (cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (0) ; Programmed", 2, "xcku040_0 (0)", 0, false); // t (Q, cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (0) ; Programmed", 2, "xcku040_0 (0)", 0, false, false, false, false, true, false); // t (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xcku040_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 32 seconds
+collapseTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210308957536 (1) ; Open", 1); // t (Q, cp)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210308957536 (1) ; Open", 1); // t (Q, cp)
+// Elapsed time: 66 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1228 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, cp)
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // u (f, cp): TRUE
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "ipBus"); // OverlayTextField (C, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, ipbus_decode_ipbus_example.vhd]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, ipbus_decode_ipbus_example.vhd]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("ipbus_decode_ipbus_example.vhd", 185, 80); // cl (w, cp)
+typeControlKey((HResource) null, "ipbus_decode_ipbus_example.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("ipbus_decode_ipbus_example.vhd", 28, 79); // cl (w, cp)
+typeControlKey((HResource) null, "ipbus_decode_ipbus_example.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 107 seconds
+selectCodeEditor("ipbus_decode_ipbus_example.vhd", 120, 217); // cl (w, cp)
+closeMainWindow("lpgbt-fpga-kcu105_Ver_8 - [/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.xpr] - Vivado 2018.3"); // cp
+// A (cp): Exit Vivado: addNotify

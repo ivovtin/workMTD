@@ -1,0 +1,429 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Jan 28 09:39:49 2020
+| Host         : ceacmsfw running 64-bit CentOS Linux release 7.6.1810 (Core)
+| Command      : report_methodology -file lpgbtfpga_kcu105_10g24_top_methodology_drc_routed.rpt -pb lpgbtfpga_kcu105_10g24_top_methodology_drc_routed.pb -rpx lpgbtfpga_kcu105_10g24_top_methodology_drc_routed.rpx
+| Design       : lpgbtfpga_kcu105_10g24_top
+| Device       : xcku040-ffva1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 70
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                                      | 17         |
+| TIMING-6  | Warning  | No common primary clock between related clocks                    | 2          |
+| TIMING-7  | Warning  | No common node between related clocks                             | 4          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                                 | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                                  | 1          |
+| TIMING-11 | Warning  | Inappropriate max delay with datapath only option                 | 16         |
+| TIMING-18 | Warning  | Missing input or output delay                                     | 9          |
+| TIMING-20 | Warning  | Non-clocked latch                                                 | 1          |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                                | 4          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects                       | 4          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port                          | 8          |
+| CLKC-55   | Advisory | MMCME3 with global clock driver has no LOC                        | 1          |
+| XDCV-2    | Advisory | Incomplete constraint coverage due to missing replicated objects. | 2          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell infra/eth/mac_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_tx_clk/async_rst0_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_tx_clk/async_rst1_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_tx_clk/async_rst2_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_tx_clk/async_rst3_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_tx_clk/async_rst4_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_rx_clk/async_rst0_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_rx_clk/async_rst1_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_rx_clk/async_rst2_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_rx_clk/async_rst3_reg/CLR, infra/eth/mac/U0/temac_gbe_v9_0_core/sync_glbl_rstn_rx_clk/async_rst4_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_out_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync1_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync2_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_out_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync1_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync2_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_meta_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_out_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_sync1_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_sync2_reg/PRE, infra/eth/phy/U0/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_basex_156_25_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_basex_156_25_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell lpgbtFpga_top_inst/mgt_inst/FSM_onehot_stateBitSlip[2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/FSM_onehot_stateBitSlip_reg[1]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/FSM_onehot_stateBitSlip_reg[2]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCmd_s_reg/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCounter_s_reg[0]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCounter_s_reg[1]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCounter_s_reg[2]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCounter_s_reg[3]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCounter_s_reg[4]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/bitSlipCounter_s_reg[5]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/cmd_bitslipCtrl_o_reg/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/cmd_bitslipDone_s_reg/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/dat_word_s_reg[0]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/dat_word_s_reg[1]/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/headerFlag_s_reg/CLR, lpgbtFpga_top_inst/uplink_inst/lpgbtfpga_framealigner_inst/psAddress_reg[0]/CLR (the first 15 of 23 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell lpgbtFpga_top_inst/mgt_inst/resetDoneSynch_rx/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) lpgbtFpga_top_inst/mgt_inst/resetDoneSynch_rx/rst_in_meta_reg/PRE, lpgbtFpga_top_inst/mgt_inst/resetDoneSynch_rx/rst_in_out_reg/PRE, lpgbtFpga_top_inst/mgt_inst/resetDoneSynch_rx/rst_in_sync1_reg/PRE, lpgbtFpga_top_inst/mgt_inst/resetDoneSynch_rx/rst_in_sync2_reg/PRE, lpgbtFpga_top_inst/mgt_inst/resetDoneSynch_rx/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_out_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync1_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync2_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_out_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync1_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync2_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_meta_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_meta_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_out_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_sync1_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_sync2_reg/PRE, lpgbtFpga_top_inst/mgt_inst/xlx_ku_mgt_std_i/inst/gen_gtwizard_gthe3_top.xlx_ku_mgt_ip_10g24_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell payload/example/lpGBTsc_inst/ic_inst/rx_inst/ic_rx_fifo_inst/ongoing_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/cnter_reg[0]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/cnter_reg[1]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/cnter_reg[2]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/cnter_reg[3]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/ongoing_reg/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[1]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[2]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[3]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[4]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[5]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[6]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_no_destuffing_reg[7]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_reg[1]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_reg[2]/CLR, payload/example/lpGBTsc_inst/ic_inst/rx_inst/Deserializer_inst/reg_reg[3]/CLR (the first 15 of 132 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks ipbus_clk and rxoutclk_out[0]_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks ipbus_clk] -to [get_clocks rxoutclk_out[0]_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks rxoutclk_out[0]_1 and ipbus_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rxoutclk_out[0]_1] -to [get_clocks ipbus_clk]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks ipbus_clk and rxoutclk_out[0]_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks ipbus_clk] -to [get_clocks rxoutclk_out[0]_1]
+Related violations: <none>
+
+TIMING-7#2 Warning
+No common node between related clocks  
+The clocks rxoutclk_out[0]_1 and ipbus_clk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rxoutclk_out[0]_1] -to [get_clocks ipbus_clk]
+Related violations: <none>
+
+TIMING-7#3 Warning
+No common node between related clocks  
+The clocks rxoutclk_out[0]_1 and txoutclk_out[0]_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rxoutclk_out[0]_1] -to [get_clocks txoutclk_out[0]_1]
+Related violations: <none>
+
+TIMING-7#4 Warning
+No common node between related clocks  
+The clocks txoutclk_out[0]_1 and rxoutclk_out[0]_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]_1] -to [get_clocks rxoutclk_out[0]_1]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-11#1 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[0]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#2 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[10]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#3 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[11]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#4 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[12]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#5 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[13]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#6 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[14]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#7 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[15]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#8 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[1]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#9 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[2]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#10 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[3]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#11 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[4]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#12 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[5]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#13 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[6]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#14 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[7]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#15 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[8]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#16 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between infra/eth/mac/U0/temac_gbe_v9_0_core/flow/rx_pause/pause_value_to_tx_reg[9]/C and infra/eth/mac/U0/temac_gbe_v9_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ff_rx_int_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on ff_rx_prsnt_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on ff_tx_int_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on ff_tx_prsnt_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on USER_SMA_GPIO_P relative to clock(s) SMA_MGT_REFCLK
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on ff_rx_reset_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on ff_rx_select_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on ff_tx_reset_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on ff_tx_select_n relative to clock(s) USER_CLOCK
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch payload/example/RxDRAM_EN_s_reg cannot be properly analyzed as its control pin payload/example/RxDRAM_EN_s_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 37 in the Timing Constraints window in Vivado IDE) between clocks USER_CLOCK and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK overrides a set_max_delay -datapath_only (position 82). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 37 in the Timing Constraints window in Vivado IDE) between clocks USER_CLOCK and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK overrides a set_max_delay -datapath_only (position 85). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 37 in the Timing Constraints window in Vivado IDE) between clocks dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK and USER_CLOCK overrides a set_max_delay -datapath_only (position 80). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 37 in the Timing Constraints window in Vivado IDE) between clocks dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK and USER_CLOCK overrides a set_max_delay -datapath_only (position 87). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ lpgbtFpga_top_inst/uplink_inst/*descrambledData_reg[*]/C}]' of constraint 'set_multicycle_path' uses inefficient query to find pin objects (see constraint position '41' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/lpgbt-fpga-kcu105/constraints/kcu105_clks.xdc (Line: 41)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ lpgbtFpga_top_inst/uplink_inst/*descrambledData_reg[*]/C}]' of constraint 'set_multicycle_path' uses inefficient query to find pin objects (see constraint position '42' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/lpgbt-fpga-kcu105/constraints/kcu105_clks.xdc (Line: 42)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ lpgbtFpga_top_inst/downlink_inst/lpgbtfpga_scrambler_inst/scrambledData*/D}]' of constraint 'set_multicycle_path' uses inefficient query to find pin objects (see constraint position '43' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/lpgbt-fpga-kcu105/constraints/kcu105_clks.xdc (Line: 45)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ lpgbtFpga_top_inst/downlink_inst/lpgbtfpga_scrambler_inst/scrambledData*/D}]' of constraint 'set_multicycle_path' uses inefficient query to find pin objects (see constraint position '44' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/lpgbt-fpga-kcu105/constraints/kcu105_clks.xdc (Line: 46)
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'dip_sw[0]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {dip_sw[*]} -filter {direction != out}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 61)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'dip_sw[1]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {dip_sw[*]} -filter {direction != out}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 61)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'dip_sw[2]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {dip_sw[*]} -filter {direction != out}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 61)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'dip_sw[3]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {dip_sw[*]} -filter {direction != out}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 61)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'leds[0]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {leds[*]} -filter {direction != in}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 53)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'leds[1]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {leds[*]} -filter {direction != in}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 53)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'leds[2]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {leds[*]} -filter {direction != in}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 53)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'leds[3]' relative to clock USER_CLOCK for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks USER_CLOCK] 0.000 [get_ports -quiet {leds[*]} -filter {direction != in}]
+/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 53)
+Related violations: <none>
+
+CLKC-55#1 Advisory
+MMCME3 with global clock driver has no LOC  
+The MMCME3_ADV cell infra/clocks/mmcm CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) mgt_freedrpclk_s_BUFG_inst and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+XDCV-2#1 Advisory
+Incomplete constraint coverage due to missing replicated objects.  
+The option '-from : [get_pins lpgbtFpga_top_inst/uplink_inst/rdy_1_s_reg/C]' of the following constraint is attached to some original objects but not to all their replicated objects. Please review the missing replicated objects and assess if they need to be included in the constraint. Use 'get_cells or get_pins -include_replicated_objects <origObjectName>' to query all replicated objects associated with an original object.
+Current Constraint: set_multicycle_path -hold -from [get_pins lpgbtFpga_top_inst/uplink_inst/rdy_1_s_reg/C] 2
+Current XDC: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 120)
+Original cells:
+<none>
+Original pins:
+lpgbtFpga_top_inst/uplink_inst/rdy_1_s_reg/C
+Related violations: <none>
+
+XDCV-2#2 Advisory
+Incomplete constraint coverage due to missing replicated objects.  
+The option '-from : [get_pins lpgbtFpga_top_inst/uplink_inst/rdy_1_s_reg/C]' of the following constraint is attached to some original objects but not to all their replicated objects. Please review the missing replicated objects and assess if they need to be included in the constraint. Use 'get_cells or get_pins -include_replicated_objects <origObjectName>' to query all replicated objects associated with an original object.
+Current Constraint: set_multicycle_path -setup -from [get_pins lpgbtFpga_top_inst/uplink_inst/rdy_1_s_reg/C] 3
+Current XDC: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/constrs_1/imports/Alexey_BTL/ipBUS_Lib/constrs_1/kcu105_basex.tcl (Line: 119)
+Original cells:
+<none>
+Original pins:
+lpgbtFpga_top_inst/uplink_inst/rdy_1_s_reg/C
+Related violations: <none>
+
+

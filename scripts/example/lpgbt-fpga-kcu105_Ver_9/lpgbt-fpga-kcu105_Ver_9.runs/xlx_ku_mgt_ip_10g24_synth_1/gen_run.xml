@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="xlx_ku_mgt_ip_10g24_synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1571824929">
+  <File Type="RDS-DCP" Name="xlx_ku_mgt_ip_10g24.dcp"/>
+  <File Type="PA-TCL" Name="xlx_ku_mgt_ip_10g24.tcl"/>
+  <File Type="REPORTS-TCL" Name="xlx_ku_mgt_ip_10g24_reports.tcl"/>
+  <File Type="RDS-RDS" Name="xlx_ku_mgt_ip_10g24.vds"/>
+  <File Type="RDS-UTIL-PB" Name="xlx_ku_mgt_ip_10g24_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="xlx_ku_mgt_ip_10g24_utilization_synth.rpt"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xlx_ku_mgt_ip_10g24">
+    <File Path="$PSRCDIR/xlx_ku_mgt_ip_10g24/ip/xlx_ku_mgt_ip_10g24/xlx_ku_mgt_ip_10g24.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../software/lpGBT/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_ip_10g24.xci"/>
+        <Attr Name="ImportTime" Val="1571824916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="xlx_ku_mgt_ip_10g24"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xlx_ku_mgt_ip_10g24">
+    <File Path="$PSRCDIR/xlx_ku_mgt_ip_10g24/ip/xlx_ku_mgt_ip_10g24/xlx_ku_mgt_ip_10g24.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../software/lpGBT/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_ip_10g24.xci"/>
+        <Attr Name="ImportTime" Val="1571824916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="xlx_ku_mgt_ip_10g24"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

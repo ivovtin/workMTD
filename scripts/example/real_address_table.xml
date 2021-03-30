@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<node id="TOP">
+  <node id="TxBRAM" address="0x4000" mode="block" size="4096" />
+  <node id="RxBRAM" address="0x5000" mode="block" size="4096" />
+  <node id="ECTxRAM" address="0x6000" mode="block" size="4096" />
+  <node id="ECRxRAM" address="0x7000" mode="block" size="4096" />
+  <node id="rFER" address="0x4"/>
+  <node id="rrFER" address="0x5"/>
+  <node id="swMODE" address="0x3"/>
+
+  <node id="A0" address="0x0"/>
+  <node id="A1" address="0x1"/>
+  <node id="A2" address="0x2"/>
+  <node id="A3" address="0x3"/>
+  <node id="A4" address="0x4"/>
+  <node id="A5" address="0x5"/>
+
+  <node id="8001" address="0x8001" mode="block" size="1024" />
+  <node id="8402" address="0x8402" mode="block" size="1024" />
+  <node id="8803" address="0x8803" mode="block" size="1024" />
+  <node id="6401" address="0x6401" mode="block" size="1024" />
+  <node id="6801" address="0x6801" mode="block" size="1024" />
+
+  <node id="nFRAME" address="0x6"/>
+  <node id="EC_Tx_Elink_Header" address="0x8000" mode="block" size="1024" />
+  <node id="EC_Tx_SCA_Header" address="0x8400" mode="block" size="1024" />
+  <node id="EC_Tx_SCA_Data" address="0x8800" mode="block" size="1024" />
+  <node id="SCA_Test_CMD" address="0x8C00"/>
+  <node id="SCA_Rst_CMD" address="0x8C01"/>
+  <node id="SCA_Connect_CMD" address="0x8C02"/>
+  <node id="SCA_Start_CMD" address="0x8C03"/>
+  <node id="EC_Rx_SCA_Header" address="0x6400" mode="block" size="1024" />
+  <node id="EC_Rx_SCA_Data" address="0x6800" mode="block" size="1024" />
+
+  <node id="IC_Read" address="0x1008"/>
+  <node id="IC_Write" address="0x1009"/>
+  <node id="IC_Read_Status" address="0x1004"/>
+
+  <node id="IC_Read_rxData" address="0x1005"/>
+  <node id="IC_Write_txData" address="0x1001"/>
+  <node id="IC_Write_txConf" address="0x1000"/>
+  <node id="IC_Write_txNWord" address="0x1002"/>
+
+</node>

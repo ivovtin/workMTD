@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SCA_work_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SCA_work_TB" />
+            <top_module name="glbl" />
+            <top_module name="ipbus" />
+            <top_module name="ipbus_decode_ipbus_example" />
+            <top_module name="ipbus_reg_types" />
+            <top_module name="ipbus_trans_decl" />
+            <top_module name="prbs_pattern_generator" />
+            <top_module name="sca_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="6569440000fs"></ZoomStartTime>
+      <ZoomEndTime time="8651440001fs"></ZoomEndTime>
+      <Cursor1Time time="7569440000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wave_markers>
+      <marker time="2571875000" label="" />
+      <marker time="2671875000" label="" />
+      <marker time="2771875000" label="" />
+      <marker time="2871875000" label="" />
+      <marker time="2971875000" label="" />
+      <marker time="3071875000" label="" />
+      <marker time="3171875000" label="" />
+      <marker time="3271875000" label="" />
+      <marker time="3371875000" label="" />
+      <marker time="3471875000" label="" />
+      <marker time="3571875000" label="" />
+      <marker time="3571875000" label="" />
+      <marker time="3671875000" label="" />
+      <marker time="3771875000" label="" />
+      <marker time="3871875000" label="" />
+      <marker time="3971875000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/SCA_work_TB/ipb_clk_s" type="logic">
+      <obj_property name="ElementShortName">ipb_clk_s</obj_property>
+      <obj_property name="ObjectShortName">ipb_clk_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/ipb_in_s" type="array">
+      <obj_property name="ElementShortName">ipb_in_s</obj_property>
+      <obj_property name="ObjectShortName">ipb_in_s</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/ipb_out_s" type="array">
+      <obj_property name="ElementShortName">ipb_out_s</obj_property>
+      <obj_property name="ObjectShortName">ipb_out_s</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/Tx_clk_s" type="logic">
+      <obj_property name="ElementShortName">Tx_clk_s</obj_property>
+      <obj_property name="ObjectShortName">Tx_clk_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/Tx_clk_en_s" type="logic">
+      <obj_property name="ElementShortName">Tx_clk_en_s</obj_property>
+      <obj_property name="ObjectShortName">Tx_clk_en_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/lpgbtfpga_downlinkEcData_s" type="array">
+      <obj_property name="ElementShortName">lpgbtfpga_downlinkEcData_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">lpgbtfpga_downlinkEcData_s[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/tx_address_si" type="array">
+      <obj_property name="ElementShortName">tx_address_si[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_address_si[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/tx_transID_si" type="array">
+      <obj_property name="ElementShortName">tx_transID_si[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_transID_si[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/tx_command_si" type="array">
+      <obj_property name="ElementShortName">tx_command_si[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_command_si[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/tx_data_si" type="array">
+      <obj_property name="ElementShortName">tx_data_si[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data_si[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBT_SCA_rst_cmd_s" type="logic">
+      <obj_property name="ElementShortName">lpGBT_SCA_rst_cmd_s</obj_property>
+      <obj_property name="ObjectShortName">lpGBT_SCA_rst_cmd_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBT_SCA_connect_cmd_s" type="logic">
+      <obj_property name="ElementShortName">lpGBT_SCA_connect_cmd_s</obj_property>
+      <obj_property name="ObjectShortName">lpGBT_SCA_connect_cmd_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBT_SCA_start_cmd_s" type="logic">
+      <obj_property name="ElementShortName">lpGBT_SCA_start_cmd_s</obj_property>
+      <obj_property name="ObjectShortName">lpGBT_SCA_start_cmd_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/EC_EOF_Reg_s" type="array">
+      <obj_property name="ElementShortName">EC_EOF_Reg_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EC_EOF_Reg_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/EC_Frame_cnt" type="other">
+      <obj_property name="ElementShortName">EC_Frame_cnt</obj_property>
+      <obj_property name="ObjectShortName">EC_Frame_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/EC_Frame_addr_s" type="array">
+      <obj_property name="ElementShortName">EC_Frame_addr_s[9:0]</obj_property>
+      <obj_property name="ObjectShortName">EC_Frame_addr_s[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/Next_EC_TxFrame_s" type="logic">
+      <obj_property name="ElementShortName">Next_EC_TxFrame_s</obj_property>
+      <obj_property name="ObjectShortName">Next_EC_TxFrame_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/SCA_frame_TxRx_s" type="logic">
+      <obj_property name="ElementShortName">SCA_frame_TxRx_s</obj_property>
+      <obj_property name="ObjectShortName">SCA_frame_TxRx_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/Tx_Frame_s" type="logic">
+      <obj_property name="ElementShortName">Tx_Frame_s</obj_property>
+      <obj_property name="ObjectShortName">Tx_Frame_s</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider414">
+      <obj_property name="label">-----------------------------------</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/tx_GBTx_address_i" type="array">
+      <obj_property name="ElementShortName">tx_GBTx_address_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_GBTx_address_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/tx_register_addr_i" type="array">
+      <obj_property name="ElementShortName">tx_register_addr_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_register_addr_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/tx_nb_to_be_read_i" type="array">
+      <obj_property name="ElementShortName">tx_nb_to_be_read_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_nb_to_be_read_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/wr_to_gbtic_si" type="logic">
+      <obj_property name="ElementShortName">wr_to_gbtic_si</obj_property>
+      <obj_property name="ObjectShortName">wr_to_gbtic_si</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/ic_inst/tx_inst/fifo" type="array">
+      <obj_property name="ElementShortName">fifo[19:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo[19:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/slave2/reg" type="array">
+      <obj_property name="ElementShortName">reg[0:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[0:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/slave3/reg" type="array">
+      <obj_property name="ElementShortName">reg[0:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[0:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/start_read_to_gbtic_si" type="logic">
+      <obj_property name="ElementShortName">start_read_to_gbtic_si</obj_property>
+      <obj_property name="ObjectShortName">start_read_to_gbtic_si</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/ic_ready" type="logic">
+      <obj_property name="ElementShortName">ic_ready</obj_property>
+      <obj_property name="ObjectShortName">ic_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/ic_empty" type="logic">
+      <obj_property name="ElementShortName">ic_empty</obj_property>
+      <obj_property name="ObjectShortName">ic_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/Tx_IC_bits_o" type="array">
+      <obj_property name="ElementShortName">Tx_IC_bits_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Tx_IC_bits_o[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/Rx_IC_bits_i" type="array">
+      <obj_property name="ElementShortName">Rx_IC_bits_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Rx_IC_bits_i[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/Rx_clk_i" type="logic">
+      <obj_property name="ElementShortName">Rx_clk_i</obj_property>
+      <obj_property name="ObjectShortName">Rx_clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/Rx_clk_en_i" type="logic">
+      <obj_property name="ElementShortName">Rx_clk_en_i</obj_property>
+      <obj_property name="ObjectShortName">Rx_clk_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/ic_inst/rx_inst/ic_rx_fifo_inst/mem_arr" type="array">
+      <obj_property name="ElementShortName">mem_arr[12:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_arr[12:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/ic_inst/tx_inst/fifo_r" type="array">
+      <obj_property name="ElementShortName">fifo_r[19:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_r[19:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/ic_inst/tx_start_write_i" type="logic">
+      <obj_property name="ElementShortName">tx_start_write_i</obj_property>
+      <obj_property name="ObjectShortName">tx_start_write_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCA_work_TB/PayLD/example/lpGBTsc_inst/ic_inst/tx_start_read_i" type="logic">
+      <obj_property name="ElementShortName">tx_start_read_i</obj_property>
+      <obj_property name="ObjectShortName">tx_start_read_i</obj_property>
+   </wvobject>
+</wave_config>

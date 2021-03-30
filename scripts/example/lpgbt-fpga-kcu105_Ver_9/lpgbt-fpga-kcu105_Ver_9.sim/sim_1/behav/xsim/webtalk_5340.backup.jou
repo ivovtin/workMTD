@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 24 17:50:21 2020
+# Process ID: 5340
+# Current directory: F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim/xsim.dir/SCA_work_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_8/lpgbt-fpga-kcu105_Ver_8.sim/sim_1/behav/xsim/xsim.dir/SCA_work_TB_behav/webtalk/xsim_webtalk.tcl -notrace

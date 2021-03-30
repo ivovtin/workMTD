@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan 27 17:26:23 2020
+# Process ID: 364830
+# Current directory: /home/alkozyre/cernbox/Alexey_BTL/scripts/example
+# Command line: vivado
+# Log file: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.log
+# Journal file: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_10' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 6735.848 ; gain = 241.117 ; free physical = 22092 ; free virtual = 38072
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 27 17:30:20 2020...

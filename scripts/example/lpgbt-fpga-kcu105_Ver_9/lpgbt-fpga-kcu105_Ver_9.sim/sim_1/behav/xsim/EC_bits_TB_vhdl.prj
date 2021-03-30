@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/CRC16_CCITT_Gen.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_package.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_trans_decl.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_reg_types.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_decode_ipbus_example.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_fabric_sel.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/EC_Frame_DRAM.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/EC_Frame_Rx.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/EC_Frame_Tx.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/EC_RxRAM16.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/PRBS/prbs_pattern_generator.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/PRBS/prbs.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/PRBS/gbt_rx_checker.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_bram.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_ctrlreg_v.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_reg_v.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_ram.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_peephole_ram.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/ipbus_example.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sources_1/imports/home/alkozyre/cernbox/Alexey_BTL/ipBUS_Lib/sources_1/payload_example.vhd" \
+"../../../../lpgbt-fpga-kcu105_Ver_2.srcs/sim_1/imports/Alexey_BTL/A/EC_bits_TB.vhd" \
+
+# Do not sort compile order
+nosort

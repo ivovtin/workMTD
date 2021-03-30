@@ -1,0 +1,3 @@
+temac_gbe_v9_0_block.vhd,vhdl,xil_defaultlib,../../../../../../ipBUS_Lib/sources_1/ip/temac_gbe_v9_0/synth/temac_gbe_v9_0_block.vhd,
+temac_gbe_v9_0.vhd,vhdl,xil_defaultlib,../../../../../../ipBUS_Lib/sources_1/ip/temac_gbe_v9_0/synth/temac_gbe_v9_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

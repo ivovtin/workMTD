@@ -1,0 +1,1239 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan 27 17:31:41 2020
+# Process ID: 381315
+# Current directory: /home/alkozyre/cernbox/Alexey_BTL/scripts/example
+# Command line: vivado
+# Log file: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.log
+# Journal file: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_10' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 6664.387 ; gain = 173.340 ; free physical = 22155 ; free virtual = 38136
+update_compile_order -fileset sources_1
+update_files -from_files /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd -to_files /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd' with file '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd'.
+INFO: [filemgmt 20-1080] Importing file from '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd' to '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd'.
+ERROR: [filemgmt 20-1081] Replace file failure for imported file. Reimport failed. Error copying file locally: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd
+ERROR: [Common 17-39] 'update_files' failed due to earlier errors.
+update_files -from_files /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd -to_files /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd' with file '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd'.
+INFO: [filemgmt 20-1080] Importing file from '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd' to '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd'.
+ERROR: [filemgmt 20-1081] Replace file failure for imported file. Reimport failed. Error copying file locally: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd
+ERROR: [Common 17-39] 'update_files' failed due to earlier errors.
+add_files -norecurse /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd] -no_script -reset -force -quiet
+remove_files  /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/mgt/10g24/xlx_ku_mgt_10g24.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/imports/lpgbt-fpga-kcu105/Mgt/10g24/xlx_ku_mgt_10g24.vhd
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/software/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCA_work_TB' in fileset 'sim_1'...
+ERROR: [Vivado 12-4335] Base directory [/home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105.ip_user_files/mem_init_files] is not writable
+
+    while executing
+"extract_files -force -no_paths -files [list "$file"] -base_dir $mem_init_dir"
+    ("foreach" body line 35)
+    invoked from within
+"foreach file $data_files {
+    set extn [file extension $file]
+    set filename [file tail $file]
+    switch -- $extn {
+      {.bd} -
+      {.png} -
+ ..."
+    (procedure "xcs_export_data_files" line 9)
+    invoked from within
+"xcs_export_data_files $s_launch_dir $dynamic_repo_dir $data_files"
+    (procedure "xcs_export_fs_data_files" line 17)
+    invoked from within
+"xcs_export_fs_data_files $launch_dir $dynamic_repo_dir $s_data_files_filter"
+    (procedure "xcs_xport_data_files" line 36)
+    invoked from within
+"xcs_xport_data_files $a_sim_vars(sp_tcl_obj) $a_sim_vars(s_simset) $a_sim_vars(s_sim_top) $a_sim_vars(s_launch_dir) $a_sim_vars(dynamic_repo_dir)"
+    (procedure "usf_xsim_setup_simulation" line 69)
+    invoked from within
+"usf_xsim_setup_simulation"
+    (procedure "tclapp::xilinx::xsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::xsim::setup { -simset sim_1 -mode behavioral -run_dir /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Vivado 12-4335] Base directory [/home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105.ip_user_files/mem_init_files] is not writable
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Mon Jan 27 17:42:34 2020] Launched synth_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Mon Jan 27 17:46:27 2020] Launched impl_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/software/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCA_work_TB' in fileset 'sim_1'...
+ERROR: [Vivado 12-4335] Base directory [/home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105.ip_user_files/mem_init_files] is not writable
+
+    while executing
+"extract_files -force -no_paths -files [list "$file"] -base_dir $mem_init_dir"
+    ("foreach" body line 35)
+    invoked from within
+"foreach file $data_files {
+    set extn [file extension $file]
+    set filename [file tail $file]
+    switch -- $extn {
+      {.bd} -
+      {.png} -
+ ..."
+    (procedure "xcs_export_data_files" line 9)
+    invoked from within
+"xcs_export_data_files $s_launch_dir $dynamic_repo_dir $data_files"
+    (procedure "xcs_export_fs_data_files" line 17)
+    invoked from within
+"xcs_export_fs_data_files $launch_dir $dynamic_repo_dir $s_data_files_filter"
+    (procedure "xcs_xport_data_files" line 36)
+    invoked from within
+"xcs_xport_data_files $a_sim_vars(sp_tcl_obj) $a_sim_vars(s_simset) $a_sim_vars(s_sim_top) $a_sim_vars(s_launch_dir) $a_sim_vars(dynamic_repo_dir)"
+    (procedure "usf_xsim_setup_simulation" line 69)
+    invoked from within
+"usf_xsim_setup_simulation"
+    (procedure "tclapp::xilinx::xsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::xsim::setup { -simset sim_1 -mode behavioral -run_dir /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_10/lpgbt-fpga-kcu105_Ver..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Vivado 12-4335] Base directory [/home/software/lpGBT/lpgbt-fpga-kcu105/Vivado/lpgbt-fpga-kcu105.ip_user_files/mem_init_files] is not writable
+close_project
+open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_11' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_clock_div.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_clock_div.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/clocks_us_serdes.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/clocks_us_serdes.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/emac_hostbus_decl.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/emac_hostbus_decl.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/eth_us_1000basex.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/eth_us_1000basex.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/PRBS/prbs_pattern_generator.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/PRBS/prbs_pattern_generator.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/PRBS/gbt_rx_checker.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/PRBS/gbt_rx_checker.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/SCA/sca_pkg.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/SCA/sca_pkg.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/gbtsc_top.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/gbtsc_top.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/IC/ic_deserializer.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/IC/ic_deserializer.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/IC/ic_rx.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/IC/ic_rx.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/IC/ic_rx_fifo.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/IC/ic_rx_fifo.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/IC/ic_top.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/IC/ic_top.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/IC/ic_tx.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/IC/ic_tx.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_package.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_package.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_trans_decl.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_trans_decl.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_reg_types.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_reg_types.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_decode_ipbus_example.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_decode_ipbus_example.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_fabric_sel.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_fabric_sel.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/new/ipBUS_EC_bram.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/new/ipBUS_EC_bram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_bram.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_bram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_ipaddr_block.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_ipaddr_block.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_rarp_block.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_rarp_block.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_arp.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_arp.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_payload.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_payload.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_ping.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_ping.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_resend.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_resend.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_status.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_build_status.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_status_buffer.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_status_buffer.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_byte_sum.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_byte_sum.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_do_rx_reset.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_do_rx_reset.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_packet_parser.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_packet_parser.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_rxram_mux.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_rxram_mux.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_dualportram.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_dualportram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_buffer_selector.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_buffer_selector.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_rxram_shim.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_rxram_shim.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_dualportram_rx.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_dualportram_rx.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_dualportram_tx.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_dualportram_tx.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_rxtransactor_if_simple.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_rxtransactor_if_simple.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_tx_mux.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_tx_mux.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_txtransactor_if_simple.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_txtransactor_if_simple.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_clock_crossing_if.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_clock_crossing_if.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/udp_if_flat.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/udp_if_flat.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/trans_arb.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/trans_arb.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/transactor_if.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/transactor_if.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/transactor_sm.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/transactor_sm.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/transactor_cfg.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/transactor_cfg.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/transactor.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/transactor.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_ctrl.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_ctrl.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_ctrlreg_v.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_ctrlreg_v.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_reg_v.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_reg_v.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/PRBS/prbs.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/PRBS/prbs.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/led_stretcher.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/led_stretcher.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_example.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/ipbus_example.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/kcu105_basex_infra.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/kcu105_basex_infra.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/ipBUS_Lib/sources_1/payload_example.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/ipBUS_Lib/sources_1/payload_example.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/SCA/sca_deserializer.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/SCA/sca_deserializer.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/SCA/sca_rx.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/SCA/sca_rx.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/SCA/sca_rx_fifo.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/SCA/sca_rx_fifo.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/SCA/sca_top.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/SCA/sca_top.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sources_1/GBT-SC/SCA/sca_tx.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sources_1/GBT-SC/SCA/sca_tx.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/constrs_1/ipBUS_Lib/constrs_1/clock_utils.tcl', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/constrs_1/ipBUS_Lib/constrs_1/clock_utils.tcl'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/constrs_1/ipBUS_Lib/constrs_1/kcu105_basex.tcl', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/constrs_1/ipBUS_Lib/constrs_1/kcu105_basex.tcl'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/alkozyre/cernbox/Alexey_BTL/Lib/sim_1/SCA_work_TB.vhd', nor could it be found using path '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/Lib/sim_1/SCA_work_TB.vhd'.
+Scanning sources...
+Finished scanning sources
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'blk_mem_gen_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'gig_ethernet_pcs_pma_basex_156_25'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'temac_gbe_v9_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'.
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
+open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Users/Alexey/Project/CERN/Xilinx/lpGBT_Project/lpgbt-fpga-kcu105_Ver_11' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/software/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCA_work_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj SCA_work_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj SCA_work_TB_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_reg_types.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_decode_ipbus_example.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/PRBS/prbs_pattern_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/PRBS/prbs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'prbs'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_clock_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipbus_clock_div'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/PRBS/gbt_rx_checker.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gbt_rx_checker'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/SCA/sca_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/gbtsc_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gbtsc_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/IC/ic_deserializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ic_deserializer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/IC/ic_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ic_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/IC/ic_rx_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ic_rx_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/IC/ic_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ic_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/IC/ic_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ic_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_trans_decl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_fabric_sel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipbus_fabric_sel'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/new/ipBUS_EC_bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipBUS_EC_bram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipbus_bram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_ctrlreg_v.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipbus_ctrlreg_v'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_reg_v.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipbus_reg_v'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/led_stretcher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'led_stretcher'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/ipbus_example.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ipbus_example'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/ipBUS_Lib/sources_1/payload_example.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'payload'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/SCA/sca_deserializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sca_deserializer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/SCA/sca_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sca_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/SCA/sca_rx_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sca_rx_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/SCA/sca_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sca_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/imports/sources_1/GBT-SC/SCA/sca_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sca_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sim_1/imports/sim_1/SCA_work_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SCA_work_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/software/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 1389f0cfd71d4a4b84eb937eefd851cb --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SCA_work_TB_behav xil_defaultlib.SCA_work_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.ipbus
+Compiling package xil_defaultlib.ipbus_reg_types
+Compiling package xil_defaultlib.ipbus_decode_ipbus_example
+Compiling package xil_defaultlib.prbs_pattern_generator
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.sca_pkg
+Compiling package xil_defaultlib.ipbus_trans_decl
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.gbt_rx_checker [\gbt_rx_checker(seed_length=31,n...]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_fabric_sel [\ipbus_fabric_sel(nslv=22,sel_wi...]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_ctrlreg_v [ipbus_ctrlreg_v_default]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_reg_v [ipbus_reg_v_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture rtl of entity xil_defaultlib.ipbus_bram [ipbus_bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.prbs [\prbs(seed="00000000000000010100...]
+Compiling architecture rtl of entity xil_defaultlib.ipBUS_EC_bram [ipbus_ec_bram_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_tx [sca_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.sca_deserializer [sca_deserializer_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_rx_fifo [sca_rx_fifo_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_rx [sca_rx_default]
+Compiling architecture behaviour of entity xil_defaultlib.sca_top [sca_top_default]
+Compiling architecture behaviour of entity xil_defaultlib.ic_tx [\ic_tx(g_fifo_depth=12)\]
+Compiling architecture behaviour of entity xil_defaultlib.ic_deserializer [ic_deserializer_default]
+Compiling architecture behavioral of entity xil_defaultlib.ic_rx_fifo [\ic_rx_fifo(g_fifo_depth=12)\]
+Compiling architecture behaviour of entity xil_defaultlib.ic_rx [\ic_rx(g_fifo_depth=12)\]
+Compiling architecture behaviour of entity xil_defaultlib.ic_top [\ic_top(g_tolpgbt=1,g_fifo_depth...]
+Compiling architecture behaviour of entity xil_defaultlib.gbtsc_top [\gbtsc_top(g_ic_fifo_depth=12,g_...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(0,15)\]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_clock_div [ipbus_clock_div_default]
+Compiling architecture rtl of entity xil_defaultlib.led_stretcher [led_stretcher_default]
+Compiling architecture rtl of entity xil_defaultlib.ipbus_example [ipbus_example_default]
+Compiling architecture rtl of entity xil_defaultlib.payload [payload_default]
+Compiling architecture behavioral of entity xil_defaultlib.sca_work_tb
+Built simulation snapshot SCA_work_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SCA_work_TB_behav -key {Behavioral:sim_1:Functional:SCA_work_TB} -tclbatch {SCA_work_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SCA_work_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module SCA_work_TB.PayLD.example.slave4.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave6.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave11.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_2 collision detected at time: 177430, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 437360, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 440484, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 443608, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 446732, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 449856, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 452980, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 456104, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 459228, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 462352, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 465476, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 599808, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 602932, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 606056, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 609180, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 612304, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 615428, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 618552, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 621676, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 624800, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 627924, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 759132, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 762256, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 765380, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 768504, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 771628, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 774752, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 777876, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 781000, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 784124, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 787248, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 790372, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SCA_work_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 7020.855 ; gain = 0.000 ; free physical = 23465 ; free virtual = 39622
+open_wave_config {/home/alkozyre/cernbox/Alexey_BTL/SCA_work_TB_behav.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/software/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCA_work_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj SCA_work_TB_vlog.prj
+xvhdl --incr --relax -prj SCA_work_TB_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/software/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 1389f0cfd71d4a4b84eb937eefd851cb --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SCA_work_TB_behav xil_defaultlib.SCA_work_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module SCA_work_TB.PayLD.example.slave4.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave6.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave11.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_2 collision detected at time: 177430, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 437360, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 440484, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 443608, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 446732, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 449856, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 452980, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 456104, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 459228, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 462352, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 465476, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 599808, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 602932, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 606056, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 609180, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 612304, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 615428, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 618552, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 621676, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 624800, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 627924, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 759132, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 762256, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 765380, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 768504, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 771628, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 774752, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 777876, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 781000, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 784124, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 787248, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 790372, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7020.855 ; gain = 0.000 ; free physical = 23463 ; free virtual = 39620
+run 10 us
+blk_mem_gen_v8_4_2 collision detected at time: 1177490, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 2725970, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 3177610, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 1, B write address: 1
+blk_mem_gen_v8_4_2 collision detected at time: 3726030, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 4726090, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 6274570, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 7274630, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 8274690, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 9274750, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 10178030, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 10726450, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+run 10 us
+blk_mem_gen_v8_4_2 collision detected at time: 11242610, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 5, B write address: 5
+blk_mem_gen_v8_4_2 collision detected at time: 12726570, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 13726630, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 14178270, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 1, B write address: 1
+blk_mem_gen_v8_4_2 collision detected at time: 15275110, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 16275170, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 17275230, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 18275290, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 18823710, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 19952810, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+save_wave_config {/home/alkozyre/cernbox/Alexey_BTL/SCA_work_TB_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/software/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCA_work_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj SCA_work_TB_vlog.prj
+xvhdl --incr --relax -prj SCA_work_TB_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/software/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 1389f0cfd71d4a4b84eb937eefd851cb --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SCA_work_TB_behav xil_defaultlib.SCA_work_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SCA_work_TB_behav -key {Behavioral:sim_1:Functional:SCA_work_TB} -tclbatch {SCA_work_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SCA_work_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module SCA_work_TB.PayLD.example.slave4.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave6.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave11.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_2 collision detected at time: 177430, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 437360, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 440484, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 443608, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 446732, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 449856, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 452980, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 456104, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 459228, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 462352, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 465476, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 599808, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 602932, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 606056, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 609180, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 612304, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 615428, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 618552, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 621676, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 624800, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 627924, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 759132, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 762256, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 765380, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 768504, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 771628, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 774752, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 777876, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 781000, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 784124, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 787248, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 790372, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SCA_work_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7020.855 ; gain = 0.000 ; free physical = 23443 ; free virtual = 39600
+open_wave_config {/home/alkozyre/cernbox/Alexey_BTL/SCA_work_TB_behav.wcfg}
+save_wave_config {/home/alkozyre/cernbox/Alexey_BTL/SCA_work_TB_behav.wcfg}
+save_wave_config {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/SCA_work_TB_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/SCA_work_TB_behav.wcfg
+set_property xsim.view /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/SCA_work_TB_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/software/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCA_work_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj SCA_work_TB_vlog.prj
+xvhdl --incr --relax -prj SCA_work_TB_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/software/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 1389f0cfd71d4a4b84eb937eefd851cb --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SCA_work_TB_behav xil_defaultlib.SCA_work_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SCA_work_TB_behav -key {Behavioral:sim_1:Functional:SCA_work_TB} -tclbatch {SCA_work_TB.tcl} -view {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/SCA_work_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.sim/SCA_work_TB_behav.wcfg
+source SCA_work_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module SCA_work_TB.PayLD.example.slave4.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave6.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave11.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_2 collision detected at time: 177430, Instance: SCA_work_TB.PayLD.example.slave5.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A read address: 0, B write address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 437360, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 440484, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 443608, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 446732, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 449856, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 452980, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 456104, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 459228, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 462352, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 465476, Instance: SCA_work_TB.PayLD.example.slave12.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 599808, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 602932, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 606056, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 609180, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 612304, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 615428, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 618552, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 621676, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 624800, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 627924, Instance: SCA_work_TB.PayLD.example.slave13.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 759132, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 762256, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 765380, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 768504, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 771628, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 774752, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 777876, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 781000, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 784124, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 787248, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_2 collision detected at time: 790372, Instance: SCA_work_TB.PayLD.example.slave14.BRAM.inst.native_mem_module.blk_mem_gen_v8_4_2_inst, A write address: 0, B  read address: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SCA_work_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7020.855 ; gain = 0.000 ; free physical = 23454 ; free virtual = 39611
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Mon Jan 27 18:27:19 2020] Launched impl_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Mon Jan 27 18:34:31 2020] Launched impl_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308957536
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/debug_nets.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/debug_nets.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/debug_nets.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/debug_nets.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_11/lpgbt-fpga-kcu105_Ver_11.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+close_project
+open_project /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Mon Jan 27 18:48:40 2020] Launched synth_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/synth_1/runme.log
+[Mon Jan 27 18:48:40 2020] Launched impl_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Tue Jan 28 09:29:17 2020] Launched synth_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/synth_1/runme.log
+[Tue Jan 28 09:29:17 2020] Launched impl_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/sources_1/ip/gig_ethernet_pcs_pma_basex_156_25/gig_ethernet_pcs_pma_basex_156_25.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.srcs/sources_1/ip/temac_gbe_v9_0/temac_gbe_v9_0.xci' is already up-to-date
+[Tue Jan 28 09:40:35 2020] Launched impl_1...
+Run output will be captured here: /home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308957536
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308957536
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_rx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_rx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308957536
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/alkozyre/cernbox/Alexey_BTL/scripts/example/lpgbt-fpga-kcu105_Ver_9/lpgbt-fpga-kcu105_Ver_9.runs/impl_1/lpgbtfpga_kcu105_10g24_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_select_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_select_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes ff_tx_reset_n_OBUF -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {ff_tx_reset_n_OBUF} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes lpgbtfpga_downlinkrst_s -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {lpgbtfpga_downlinkrst_s} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uplinkRst_i -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+commit_hw_vio [get_hw_probes {uplinkRst_i} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"vio_debug_inst"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+close_hw

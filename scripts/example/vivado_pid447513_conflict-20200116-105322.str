@@ -1,0 +1,190 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 447513
+License: Customer
+
+Current time: 	Thu Jan 16 10:53:13 CET 2020
+Time zone: 	Central European Standard Time (Europe/Zurich)
+
+OS: CentOS Linux release 7.6.1810 (Core)
+OS Version: 3.10.0-957.27.2.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: :4
+Screen size: 1360x768
+Screen resolution (DPI): 95
+Available screens: 1
+Available disk space: 36 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/software/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/home/software/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	alkozyre
+User home directory: /home/alkozyre
+User working directory: /home/alkozyre/cernbox/Alexey_BTL/scripts/example
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/software/Xilinx/Vivado
+HDI_APPROOT: /home/software/Xilinx/Vivado/2018.3
+RDI_DATADIR: /home/software/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /home/software/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/alkozyre/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/alkozyre/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/alkozyre/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/home/software/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.log
+Vivado journal file location: 	/home/alkozyre/cernbox/Alexey_BTL/scripts/example/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-447513-ceacmsfw
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/software/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2112@lxlicen01:2112@lxlicen02:2112@lxlicen03
+XILINX_DSP: /home/software/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /home/software/Xilinx/Vivado/2018.3
+XILINX_SDK: /home/software/Xilinx/SDK/2018.3
+XILINX_VIVADO: /home/software/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /home/software/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	231 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,134 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1/lpgbt-fpga-kcu105_Ver_1.xpr", 1); // q (Q, cp)
+// [GUI Memory]: 67 MB (+67408kb) [00:00:06]
+// [Engine Memory]: 5,127 MB (+5224233kb) [00:00:06]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1/lpgbt-fpga-kcu105_Ver_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1/lpgbt-fpga-kcu105_Ver_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,188 MB. GUI used memory: 40 MB. Current time: 1/16/20, 10:53:15 AM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 94 MB (+25512kb) [00:00:12]
+// [GUI Memory]: 111 MB (+12286kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  2478 ms.
+// Tcl Message: open_project /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1/lpgbt-fpga-kcu105_Ver_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: lpgbt-fpga-kcu105_Ver_1; location: /home/alkozyre/cernbox/Alexey_BTL/lpgbt-fpga-kcu105_Ver_1; part: xcku040-ffva1156-2-e
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cp)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+// [GUI Memory]: 118 MB (+1835kb) [00:00:24]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save As..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aE (cp): Save Project As: addNotify
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, aE)
+// Elapsed time: 22 seconds
+setFolderChooser("/home/alkozyre/cernbox/Alexey_BTL");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'o' command handler elapsed time: 32 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aE (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_project_as project_1 /home/alkozyre/cernbox/Alexey_BTL/project_1 -force 
+// bx (cp):  Save Project As : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: PROJECT_RENAME
+// [GUI Memory]: 124 MB (+231kb) [00:01:08]
+// bx (cp):  Save Constraints : addNotify
+dismissDialog("Save Constraints"); // bx (cp)
+// Tcl Message: import_files 
+// [Engine Memory]: 5,395 MB (+12448kb) [00:01:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,387 MB. GUI used memory: 58 MB. Current time: 1/16/20, 10:54:20 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 55 MB. Current time: 1/16/20, 11:24:20 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 11:54:21 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 12:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 12:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 1:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 1:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 2:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 2:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 3:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 3:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 4:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 4:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 5:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 5:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 6:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 6:54:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 7:24:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 7:54:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 8:24:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 8:54:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 9:24:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 9:54:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 10:24:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 10:54:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 11:24:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/16/20, 11:54:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 12:24:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 12:54:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 1:24:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 1:54:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 2:24:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 2:54:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 3:24:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 3:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 4:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 4:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 5:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 5:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 6:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 6:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 7:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 7:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 8:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 8:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 9:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 9:54:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 10:24:23 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 49 MB. Current time: 1/17/20, 10:54:23 AM CET
