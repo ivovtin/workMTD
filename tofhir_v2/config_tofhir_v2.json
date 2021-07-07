@@ -1,0 +1,55 @@
+{
+
+"Reg31":[
+   {
+    "Chip ID":"01",
+    "R/W mode":"1",
+    "Register address":"1F",
+    "Register lenght":"9B"
+   },
+   {
+     "Reg value": "7FC00000"
+   }
+],
+
+
+"Reg32":[
+   {
+    "Chip ID":"01",
+    "R/W mode":"1",
+    "Register address":"20",
+    "Register lenght":"E2"
+   },
+   {
+     "Reg value": "7FC00000"
+   }
+],
+
+
+"Reg33":[
+   {
+    "Chip ID":"01",
+    "R/W mode":"1",
+    "Register address":"21",
+    "Register lenght":"0E"
+   },
+   {
+     "Reg value": "7FC00000"
+   }
+],
+
+
+"Reg34":[
+   {
+    "Chip ID":"01",
+    "R/W mode":"0",
+    "Register address":"22",
+    "Register lenght":"2C"
+   },
+   {
+     "Reg value": "7FD40000"
+   }
+    
+]
+
+}
