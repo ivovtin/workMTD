@@ -18,22 +18,22 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"0",
-    "Register lenght":"9B"
+    "Register lenght":"9A"
    },
    {
-     "Reg value": "7FC00000"
+     "Reg value": "002ADB31"
    },
    {
-     "word6": "00000000"
+     "word6": "FFFFB0C1"
    },
    {
-     "word5": "00000000"
+     "word5": "4D800372"
    },
    {
-     "word4": "00000000"
+     "word4": "474F0004"
    },
    {
-     "word3": "00000000"
+     "word3": "00000040"
    },
    {
      "word2": "00000000"
@@ -1106,31 +1106,31 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"20",
-    "Register lenght":"E2"
+    "Register lenght":"E1"
    },
    {
-     "Reg value": "7FC00000"
+     "Reg value": "83680000"
    },
    {
-     "word6": "00000000"
+     "word6": "0B10003C"
    },
    {
-     "word5": "00000000"
+     "word5": "C183060C"
    },
    {
-     "word4": "00000000"
+     "word4": "18306080"
    },
    {
-     "word3": "00000000"
+     "word3": "01902000"
    },
    {
-     "word2": "00000000"
+     "word2": "00000C00"
    },
    {
-     "word1": "00000000"
+     "word1": "00000070"
    },
    {
-     "word0": "00000000"
+     "word0": "C0000000"
    }
 ],
 
@@ -1140,10 +1140,10 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"21",
-    "Register lenght":"0E"
+    "Register lenght":"0D"
    },
    {
-     "Reg value": "7FC40000"
+     "Reg value": "FFE00000"
    },
    {
      "word6": "00000000"

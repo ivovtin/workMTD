@@ -60,7 +60,7 @@ if __name__ == '__main__':
     Tx1_debug_RAM_start = hw.getNode("Tx1_debug_RAM_start")
 
    
-    wait = 0.01
+    wait = 1
     Nword = 8
     MEM = []
     MEM_decode = []
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     Tx1_Resync_CMD.write(int(Value)); 
     hw.dispatch();
     print "send Global Reset to all ASIC!" 
-    time.sleep(1)
+    time.sleep(wait)
 
     ############### Send configuration to all ASICs #########################
     # ASIC SET MODE COMMAND: ..., K28.5, K28.1, 0x2F, 0xAF, 0xC1, 
@@ -179,7 +179,7 @@ if __name__ == '__main__':
     hw.dispatch();
     Tx1_Config_CMD.write(int(Value)); 
     hw.dispatch();
-    time.sleep(1);
+    time.sleep(wait);
   
     # core logic RESET 
     TxValue = 6 # core logic RESET duration
@@ -193,7 +193,7 @@ if __name__ == '__main__':
     Tx1_Resync_CMD.write(int(Value)); # send Resync signal
     hw.dispatch();
     print "send core logic RESET" 
-    time.sleep(1);
+    time.sleep(wait);
 
     #***************************************************************************************************
     # ----------------------------------- ASIC GLOBAL COMMAND ---------------------------------
@@ -236,7 +236,7 @@ if __name__ == '__main__':
     hw.dispatch();
     Tx1_Config_CMD.write(int(Value)); 
     hw.dispatch();
-    time.sleep(2);
+    time.sleep(wait);
 
     # core logic RESET 
     TxValue = 6 # core logic RESET duration
@@ -250,7 +250,7 @@ if __name__ == '__main__':
     Tx1_Resync_CMD.write(int(Value)); # send Resync signal
     hw.dispatch();
     print "send core logic RESET" 
-    time.sleep(2);
+    time.sleep(wait);
 
     # ----------------------------------- ASIC CHANNEL COMMAND ---------------------------------
     # ASIC CHANNEL COMMAND: ..., K28.5, K28.1, 0x2F, 0xAF, 0xC1, 
@@ -292,7 +292,7 @@ if __name__ == '__main__':
     hw.dispatch();
     Tx1_Config_CMD.write(int(Value)); 
     hw.dispatch();
-    time.sleep(2);
+    time.sleep(wait);
 
     # core logic RESET 
     TxValue = 6 # core logic RESET duration
@@ -306,7 +306,7 @@ if __name__ == '__main__':
     Tx1_Resync_CMD.write(int(Value)); # send Resync signal
     hw.dispatch();
     print "send core logic RESET" 
-    time.sleep(1);
+    time.sleep(wait);
     #***************************************************************************************************
 
 
