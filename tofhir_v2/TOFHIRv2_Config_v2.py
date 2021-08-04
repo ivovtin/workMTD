@@ -19,9 +19,6 @@ if __name__ == '__main__':
         print "usage: TOFHIRv2_Config.py Register_number"
         sys.exit(1)
 
-    if int(sys.argv[1]) < 0 or int(sys.argv[1]) > 34:
-        sys.exit("Bad number for register. Please use [0 .. 34]")
-
     uhal.disableLogging()
 
     #connectionFilePath = "/home/software/mtd-daq/btl-kcu105-ipbus/Real_connections_TOFHIR_FULL.xml";
@@ -81,9 +78,8 @@ if __name__ == '__main__':
     MEM = []
     MEM_decode = []
 
-   ############### Open JSON file for reading configuration ###################
-    reg = int(sys.argv[1])
-    packet = "Reg" + str(reg)
+    ############### Open JSON file for reading configuration ###################
+    packet = str(sys.argv[1])
     word8_str = "0x80"
     word7_str = ""
     word6_str = ""
@@ -100,7 +96,6 @@ if __name__ == '__main__':
         TxVGoreLogic = data["Resync"][1]["Reset core logic"]
         TxVGlob = data["Resync"][2]["Global reset"]
         #registers
-        print(data[packet])
         for key0, value0 in data[packet][0].iteritems():
             if int(data[packet][0]['R/W mode'])  == 1 and key0 == "Register address":
                 regx = int(value0, base=16)
@@ -127,7 +122,7 @@ if __name__ == '__main__':
             word0_str += str(value8)
 
 
-    # set Trigger frequency
+    # set Trigger frequency  - external simulation trigger
     TxValue = 0 #25ns*40000=1000Hz
     Tx0_Trig_Freq.write(int(TxValue));
     hw.dispatch();
