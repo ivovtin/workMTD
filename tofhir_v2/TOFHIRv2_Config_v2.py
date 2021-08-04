@@ -75,46 +75,13 @@ if __name__ == '__main__':
     rxRAMs_status       = []
     rxRAMs_status.append(Rx0RAM_status)
     rxRAMs_status.append(Rx1RAM_status)
-
    
     wait = 0.01
     Nword = 8
     MEM = []
     MEM_decode = []
 
-
-
-    # set Trigger frequency
-    TxValue = 0 #25ns*40000=1000Hz
-    Tx0_Trig_Freq.write(int(TxValue));
-    hw.dispatch();
-    Tx1_Trig_Freq.write(int(TxValue)); 
-    hw.dispatch();
-
-
-    # initialize TOFHIR, IC and EC moduls
-    TxValue = 1  
-    Init_Lnk0_modules.write(int(TxValue)); 
-    hw.dispatch();
-    Init_Lnk1_modules.write(int(TxValue)); 
-    hw.dispatch();
-    
-    ############### Send Global RESET ##########
-    # set duration Resync signal 
-    TxValue = 16 # Global reset
-    Tx0_Resync_Freq.write(int(TxValue));
-    hw.dispatch();
-    Tx1_Resync_Freq.write(int(TxValue)); 
-    hw.dispatch();
-    Value = 1;
-    Tx0_Resync_CMD.write(int(Value)); # send Resync signal
-    hw.dispatch(); 
-    Tx1_Resync_CMD.write(int(Value)); 
-    hw.dispatch();
-    print "send Global Reset to all ASIC!" 
-    time.sleep(1)
-
-    ############### Opening JSON file for read configuration ###################
+   ############### Open JSON file for reading configuration ###################
     reg = int(sys.argv[1])
     packet = "Reg" + str(reg)
     word8_str = "0x80"
@@ -128,6 +95,11 @@ if __name__ == '__main__':
     word0_str = ""
     with open("config_tofhir_v2.json") as jsonFile:
         data = json.load(jsonFile, object_pairs_hook=OrderedDict)
+        #resync
+        TxVTimeTagCnt = data["Resync"][0]["Reset only time tag counter"]
+        TxVGoreLogic = data["Resync"][1]["Reset core logic"]
+        TxVGlob = data["Resync"][2]["Global reset"]
+        #registers
         print(data[packet])
         for key0, value0 in data[packet][0].iteritems():
             if int(data[packet][0]['R/W mode'])  == 1 and key0 == "Register address":
@@ -153,6 +125,36 @@ if __name__ == '__main__':
             word1_str += str(value7)
         for key8, value8 in data[packet][8].iteritems():
             word0_str += str(value8)
+
+
+    # set Trigger frequency
+    TxValue = 0 #25ns*40000=1000Hz
+    Tx0_Trig_Freq.write(int(TxValue));
+    hw.dispatch();
+    Tx1_Trig_Freq.write(int(TxValue)); 
+    hw.dispatch();
+
+
+    # initialize TOFHIR, IC and EC moduls
+    TxValue = 1  
+    Init_Lnk0_modules.write(int(TxValue)); 
+    hw.dispatch();
+    Init_Lnk1_modules.write(int(TxValue)); 
+    hw.dispatch();
+    
+    ############### Send Global RESET ##########
+    # set duration Resync signal 
+    Tx0_Resync_Freq.write(int(TxVGlob));
+    hw.dispatch();
+    Tx1_Resync_Freq.write(int(TxVGlob)); 
+    hw.dispatch();
+    Value = 1;
+    Tx0_Resync_CMD.write(int(Value)); # send Resync signal
+    hw.dispatch(); 
+    Tx1_Resync_CMD.write(int(Value)); 
+    hw.dispatch();
+    print "send Global Reset to all ASIC!" 
+    time.sleep(1)
 
     ############### Send configuration to ASICs to set all ASICs to 320Mbps mode ##########
     ############################## channel 0 ########################
@@ -195,10 +197,9 @@ if __name__ == '__main__':
   
     # core logic RESET 
     # set duration Resync signal 
-    TxValue = 6 # core logic RESET
-    Tx0_Resync_Freq.write(int(TxValue));
+    Tx0_Resync_Freq.write(int(TxVGoreLogic));
     hw.dispatch();
-    Tx1_Resync_Freq.write(int(TxValue)); 
+    Tx1_Resync_Freq.write(int(TxVGoreLogic)); 
     hw.dispatch();
     Value = 1;
     Tx0_Resync_CMD.write(int(Value)); # send Resync signal
@@ -211,10 +212,9 @@ if __name__ == '__main__':
 
     ############### Send Global RESET ##########
     # set duration Resync signal 
-    TxValue = 16 # Global reset
-    Tx0_Resync_Freq.write(int(TxValue));
+    Tx0_Resync_Freq.write(int(TxVGlob));
     hw.dispatch();
-    Tx1_Resync_Freq.write(int(TxValue)); 
+    Tx1_Resync_Freq.write(int(TxVGlob)); 
     hw.dispatch();
     Value = 1;
     Tx0_Resync_CMD.write(int(Value)); # send Resync signal
