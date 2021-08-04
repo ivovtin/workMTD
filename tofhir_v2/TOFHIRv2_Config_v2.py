@@ -16,8 +16,12 @@ if __name__ == '__main__':
     # PART 1: Argument parsing
     if len(sys.argv) <2:
         print "Incorrect usage!"
-        print "usage: TOFHIRv2_Config.py Register_number"
+        print "usage: python TOFHIRv2_Config.py Register_number Config_file_name (default is config_tofhir_v2.json)"
         sys.exit(1)
+
+    jsonConfigFile = "config_tofhir_v2.json"
+    if len(sys.argv) == 3:
+       jsonConfigFile = str(sys.argv[2])
 
     uhal.disableLogging()
 
@@ -89,7 +93,8 @@ if __name__ == '__main__':
     word2_str = ""
     word1_str = ""
     word0_str = ""
-    with open("config_tofhir_v2.json") as jsonFile:
+    ##with open("config_tofhir_v2.json") as jsonFile:
+    with open(jsonConfigFile) as jsonFile:
         data = json.load(jsonFile, object_pairs_hook=OrderedDict)
         #resync
         TxVTimeTagCnt = data["Resync"][0]["Reset only time tag counter"]
