@@ -5,7 +5,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"0",
-    "Register lenght":"9A"
+    "Register length":"9A"
    },
    {
      "dword7": "002ADB31"
@@ -39,7 +39,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -73,7 +73,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"2",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -107,7 +107,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"3",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -141,7 +141,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"4",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -175,7 +175,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"5",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -209,7 +209,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"6",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -243,7 +243,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"7",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -277,7 +277,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"8",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -311,7 +311,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"9",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -345,7 +345,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"A",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -379,7 +379,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"B",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -413,7 +413,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"C",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -447,7 +447,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"D",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -481,7 +481,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"E",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -515,7 +515,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"F",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -549,7 +549,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"10",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -583,7 +583,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"11",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -617,7 +617,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"12",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -651,7 +651,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"13",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -685,7 +685,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"14",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -719,7 +719,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"15",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -753,7 +753,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"16",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -787,7 +787,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"17",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -821,7 +821,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"18",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -855,7 +855,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"19",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -889,7 +889,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1A",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -923,7 +923,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1B",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -957,7 +957,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1C",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -991,7 +991,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1D",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -1025,7 +1025,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1E",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -1059,7 +1059,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"1F",
-    "Register lenght":"9B"
+    "Register length":"9B"
    },
    {
      "dword7": "7FC00000"
@@ -1093,7 +1093,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"20",
-    "Register lenght":"E1"
+    "Register length":"E1"
    },
    {
      "dword7": "83680000"
@@ -1127,7 +1127,7 @@
     "Chip ID":"01",
     "R/W mode":"1",
     "Register address":"21",
-    "Register lenght":"0D"
+    "Register length":"0D"
    },
    {
      "dword7": "FFE00000"
@@ -1161,7 +1161,7 @@
     "Chip ID":"01",
     "R/W mode":"0",
     "Register address":"22",
-    "Register lenght":"2C"
+    "Register length":"2C"
    },
    {
      "dword7": "7FD40000"
