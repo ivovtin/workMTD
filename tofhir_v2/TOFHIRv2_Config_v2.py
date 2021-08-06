@@ -4,13 +4,14 @@ import uhal
 import time
 import json
 from collections import OrderedDict
-
+import sys
 import argparse
 
 parser =  argparse.ArgumentParser(description='TOFHIRv2 configuration')
-parser.add_argument('-r', '--register', dest="RegNumber", type=str, required=True, help="Register number")
+parser.add_argument('-link', '--link', dest="linkN", type=int, default=0, help="Link number")
+parser.add_argument('-reg', '--register', dest="RegNumber", type=str, help="Register number")
 parser.add_argument('-f', '--configFile', dest="configName", type=str, default="config_tofhir_v2.json", help="Json config file")
-parser.add_argument('-res', '--globreset', dest="GlobReset", type=int, default=1, help="Global RESET")
+parser.add_argument('-reset', '--reset', dest="Reset", type=int, default=-1, help="Chip reset")
 
 opt = parser.parse_args()
 
@@ -25,49 +26,54 @@ if __name__ == '__main__':
     connectionMgr = uhal.ConnectionManager("file://" + connectionFilePath);
     hw = connectionMgr.getDevice(deviceId);
 
-    Init_Lnk0_modules   = hw.getNode("Init_TOFHIR_EC_IC_modules")
-    Init_Lnk1_modules   = hw.getNode("Init_TOFHIR_EC_IC_modules1")
+    if opt.linkN<0 or opt.linkN>1:
+	sys.exit("Bad number for link. Please use 0 or 1")
+   
+    Init_Lnk_modules = hw.getNode("Init_TOFHIR_EC_IC_modules"+str(opt.linkN))
 
-    statusLink0       = hw.getNode("LINK0_status")   
-    statusLink1       = hw.getNode("LINK1_status")   
+    statusLink       = hw.getNode("LINK"+str(opt.linkN)+"_RHCnt_status")   
     statusLinks = []
-    statusLinks.append(statusLink0)
-    statusLinks.append(statusLink1)
+    statusLinks.append(statusLink)
 
-    tx0RAM           = hw.getNode("Tx0BRAM")
-    tx1RAM           = hw.getNode("Tx1BRAM")
+    txRAM            = hw.getNode("Tx"+str(opt.linkN)+"BRAM")
     txRAMs = []
-    txRAMs.append(tx0RAM)
-    txRAMs.append(tx1RAM)
+    txRAMs.append(txRAM)
 
-    nlinks = 2
+    Tx_Trig_Freq     = hw.getNode("Tx"+str(opt.linkN)+"_Trig_Freq")
+    Tx_Resync_Freq   = hw.getNode("Tx"+str(opt.linkN)+"_Resync_Freq")
+    Tx_Resync_CMD 	 = hw.getNode("Tx"+str(opt.linkN)+"_Resync_CMD")
+    Tx_Trigger_CMD 	 = hw.getNode("Tx"+str(opt.linkN)+"_Trigger_CMD")
+    Tx_Config_CMD 	 = hw.getNode("Tx"+str(opt.linkN)+"_Config_CMD")
+    Tx_debug_Reg 	 = hw.getNode("Tx"+str(opt.linkN)+"_debug_Reg")
+    Tx_debug_RAM 	 = hw.getNode("Tx"+str(opt.linkN)+"_debug_RAM")
+    Tx_debug_RAM_start = hw.getNode("Tx"+str(opt.linkN)+"_debug_RAM_start")
 
-    Tx0_Trig_Freq       = hw.getNode("Tx0_Trig_Freq")
-    Tx0_Resync_Freq     = hw.getNode("Tx0_Resync_Freq")
-    Tx0_Resync_CMD 	= hw.getNode("Tx0_Resync_CMD")
-    Tx0_Trigger_CMD 	= hw.getNode("Tx0_Trigger_CMD")
-    Tx0_Config_CMD 	= hw.getNode("Tx0_Config_CMD")
-    Tx0_debug_Reg 	= hw.getNode("Tx0_debug_Reg")
-    Tx0_debug_RAM 	= hw.getNode("Tx0_debug_RAM")
-    Tx0_debug_RAM_start = hw.getNode("Tx0_debug_RAM_start")
-
-    Tx1_Trig_Freq       = hw.getNode("Tx1_Trig_Freq")
-    Tx1_Resync_Freq     = hw.getNode("Tx1_Resync_Freq")
-    Tx1_Resync_CMD 	= hw.getNode("Tx1_Resync_CMD")
-    Tx1_Trigger_CMD 	= hw.getNode("Tx1_Trigger_CMD")
-    Tx1_Config_CMD 	= hw.getNode("Tx1_Config_CMD")
-    Tx1_debug_Reg 	= hw.getNode("Tx1_debug_Reg")
-    Tx1_debug_RAM 	= hw.getNode("Tx1_debug_RAM")
-    Tx1_debug_RAM_start = hw.getNode("Tx1_debug_RAM_start")
-
-    Rx0RAM_status       = hw.getNode("Rx0RAM_status")
-    Rx1RAM_status       = hw.getNode("Rx1RAM_status")
+    RxRAM_status       = hw.getNode("Rx"+str(opt.linkN)+"RAM_status")
     rxRAMs_status       = []
-    rxRAMs_status.append(Rx0RAM_status)
-    rxRAMs_status.append(Rx1RAM_status)
+    rxRAMs_status.append(RxRAM_status)
    
     MEM = []
-    MEM_decode = []
+
+    # set Trigger frequency  - external simulation trigger
+    TxValue = 0 #25ns*40000=1000Hz
+    Tx_Trig_Freq.write(int(TxValue));
+    hw.dispatch();
+
+    # initialize TOFHIR, IC and EC moduls
+    TxValue = 1  
+    Init_Lnk_modules.write(int(TxValue)); 
+    hw.dispatch();
+    
+    ############### Send RESET ##########
+    if opt.Reset >= 0:
+        # set duration Resync signal 
+    	Tx_Resync_Freq.write(int(opt.Reset));
+    	hw.dispatch();
+    	Value = 1;
+    	Tx_Resync_CMD.write(int(Value)); # send Resync signal
+    	hw.dispatch(); 
+    	time.sleep(1)
+        sys.exit()
 
     ############### Open JSON file for reading configuration ###################
     packet = opt.RegNumber
@@ -82,10 +88,6 @@ if __name__ == '__main__':
     word0_str = ""
     with open(opt.configName) as jsonFile:
         data = json.load(jsonFile, object_pairs_hook=OrderedDict)
-        #resync
-        TxVTimeTagCnt = data["Resync"][0]["Reset only time tag counter"]
-        TxVGoreLogic = data["Resync"][1]["Reset core logic"]
-        TxVGlob = data["Resync"][2]["Global reset"]
         #registers
         for key0, value0 in data[packet][0].iteritems():
             if int(data[packet][0]['R/W mode'])  == 1 and key0 == "Register address":
@@ -112,37 +114,6 @@ if __name__ == '__main__':
         for key8, value8 in data[packet][8].iteritems():
             word0_str += str(value8)
 
-
-    # set Trigger frequency  - external simulation trigger
-    TxValue = 0 #25ns*40000=1000Hz
-    Tx0_Trig_Freq.write(int(TxValue));
-    hw.dispatch();
-    Tx1_Trig_Freq.write(int(TxValue)); 
-    hw.dispatch();
-
-
-    # initialize TOFHIR, IC and EC moduls
-    TxValue = 1  
-    Init_Lnk0_modules.write(int(TxValue)); 
-    hw.dispatch();
-    Init_Lnk1_modules.write(int(TxValue)); 
-    hw.dispatch();
-    
-    ############### Send Global RESET ##########
-    if opt.GlobReset == 1:
-        # set duration Resync signal 
-    	Tx0_Resync_Freq.write(int(TxVGlob));
-    	hw.dispatch();
-    	Tx1_Resync_Freq.write(int(TxVGlob)); 
-    	hw.dispatch();
-    	Value = 1;
-    	Tx0_Resync_CMD.write(int(Value)); # send Resync signal
-    	hw.dispatch(); 
-    	Tx1_Resync_CMD.write(int(Value)); 
-    	hw.dispatch();
-    	print "send Global Reset to all ASIC!" 
-    	time.sleep(1)
-
     ############### Send configuration to ASICs to set all ASICs to 320Mbps mode ##########
     ############################## channel 0 ########################
     print "Send  configuration:"
@@ -161,37 +132,23 @@ if __name__ == '__main__':
     cfgValue[6] = int(word6_str, base=16)
     cfgValue[7] = int(word7_str, base=16)    #3,4-data 1,0-not used   
     cfgValue[8] = int(word8_str, base=16)    #3-80 2-chip ID 1-opcode+Register address 0-Register length  # after magic number data
-    tx0RAM.writeBlock(cfgValue); 
-    hw.dispatch();
-    tx1RAM.writeBlock(cfgValue); 
+    txRAM.writeBlock(cfgValue); 
     hw.dispatch();
 
-    ##----------- Check Tx0RAM ------------
+    ##----------- Check TxRAM ------------
     MEMs = []
-    MEMs=tx0RAM.readBlock(int(Nword));
+    MEMs=txRAM.readBlock(int(Nword));
     hw.dispatch();
     # print result
     for x in range(int(Nword-1)): 
-       print "addr =", x , "data =", hex(MEMs[x])
+       strName = "payload"
+       if x==8:
+          strName = "header"
+       print "addr =", x , "data =", hex(MEMs[x]), " "+str(strName)
     
     Value = 1;
     print "send Config CMD"  
-    Tx0_Config_CMD.write(int(Value)); 
-    hw.dispatch();
-    Tx1_Config_CMD.write(int(Value)); 
+    Tx_Config_CMD.write(int(Value)); 
     hw.dispatch();
     time.sleep(1);
   
-    # core logic RESET 
-    # set duration Resync signal 
-    Tx0_Resync_Freq.write(int(TxVGoreLogic));
-    hw.dispatch();
-    Tx1_Resync_Freq.write(int(TxVGoreLogic)); 
-    hw.dispatch();
-    Value = 1;
-    Tx0_Resync_CMD.write(int(Value)); # send Resync signal
-    hw.dispatch(); 
-    Tx1_Resync_CMD.write(int(Value)); 
-    hw.dispatch();
-    print "send core logic RESET" 
-

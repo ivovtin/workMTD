@@ -69,7 +69,7 @@ if __name__ == '__main__':
             rxRAM.append( hw.getNode("Rx1BRAM_CH"+str(xx)))
         rxRAM_status       = hw.getNode("Rx1RAM_status")
     else:
-        Init_EC_IC_moduls = hw.getNode("Init_TOFHIR_EC_IC_modules")
+        Init_EC_IC_moduls = hw.getNode("Init_TOFHIR_EC_IC_modules0")
         RHCnt_status      = hw.getNode("LINK0_RHCnt_status")   
         debug_RAM 	  = hw.getNode("Tx0_debug_RAM")
         debug_RAM_start   = hw.getNode("Tx0_debug_RAM_start")

@@ -141,8 +141,8 @@
   <node id="Rx1TT_CH27" address="0x6001b000" mode="block" size="4096" />
 
 
-  <node id="LINK0_status" address="0x80010000" mode="block" size="32" />
-  <node id="LINK1_status" address="0x00010000" mode="block" size="32" />
+  <node id="LINK0_RHCnt_status" address="0x80010000" mode="block" size="32" />
+  <node id="LINK1_RHCnt_status" address="0x00010000" mode="block" size="32" />
 
 
   <node id="Tx0_Trig_Freq" address="0x8000000F"/>
@@ -155,6 +155,8 @@
   <node id="Tx0_debug_RAM_start" address="0xF0003000"/>
   <node id="rst_Rx0_addr_cnt" address="0x80000004"/>
   <node id="Rx0RAM_status" address="0x80018000"/>
+
+  <node id="Tx0_dbg_RAM_Test" address="0xF0002020" mode="block" size="512" />
 
   <node id="Tx1_Trig_Freq" address="0xF"/>
   <node id="Tx1_Resync_Freq" address="0x5"/>
@@ -171,18 +173,18 @@
   <node id="Common_rst_TFHR_Frame_addr_cnt" address="0xE"/>  
   <node id="Common_rst_TFHR_TT_counter" address="0xD"/>
 
-  <node id="Init_TOFHIR_EC_IC_modules" address="0x80000002"/>
+  <node id="Init_TOFHIR_EC_IC_modules0" address="0x80000002"/>
 
-  <node id="nFRAME" address="0x80000006"/>
-  <node id="EC_Tx_Elink_Header" address="0x80008000" mode="block" size="1024" />
-  <node id="EC_Tx_SCA_Header" address="0x80008400" mode="block" size="1024" />
-  <node id="EC_Tx_SCA_Data" address="0x80008800" mode="block" size="1024" />
-  <node id="SCA_Test_CMD" address="0x80008C00"/>
-  <node id="SCA_Rst_CMD" address="0x80008C01"/>
-  <node id="SCA_Connect_CMD" address="0x80008C02"/>
-  <node id="SCA_Start_CMD" address="0x80008C03"/>
-  <node id="EC_Rx_SCA_Header" address="0x80006400" mode="block" size="1024" />
-  <node id="EC_Rx_SCA_Data" address="0x80006800" mode="block" size="1024" />
+  <node id="nFRAME0" address="0x80000006"/>
+  <node id="EC_Tx_Elink_Header0" address="0x80008000" mode="block" size="1024" />
+  <node id="EC_Tx_SCA_Header0" address="0x80008400" mode="block" size="1024" />
+  <node id="EC_Tx_SCA_Data0" address="0x80008800" mode="block" size="1024" />
+  <node id="SCA_Test_CMD0" address="0x80008C00"/>
+  <node id="SCA_Rst_CMD0" address="0x80008C01"/>
+  <node id="SCA_Connect_CMD0" address="0x80008C02"/>
+  <node id="SCA_Start_CMD0" address="0x80008C03"/>
+  <node id="EC_Rx_SCA_Header0" address="0x80006400" mode="block" size="1024" />
+  <node id="EC_Rx_SCA_Data0" address="0x80006800" mode="block" size="1024" />
 
   <node id="IC_Read" address="0x1008"/>
   <node id="IC_Write" address="0x1009"/>

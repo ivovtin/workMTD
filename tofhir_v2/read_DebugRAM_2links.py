@@ -4,6 +4,10 @@ import random # For randint
 import sys # For sys.argv and sys.exit
 import uhal
 import time
+import operator
+import datetime
+import copy
+
 
 
 if __name__ == '__main__':
@@ -28,30 +32,25 @@ if __name__ == '__main__':
     hw = connectionMgr.getDevice(deviceId);
     
     link = int(sys.argv[1])
-    print "link =", link
+    print "Read from lpGBT link =", link
 
     if link == 1:
         Init_EC_IC_moduls = hw.getNode("Init_TOFHIR_EC_IC_modules1")
-        TOFHIR_status     = hw.getNode("LINK1_status")   
+        TOFHIR_status     = hw.getNode("LINK1_RHCnt_status")   
         debug_RAM 	  = hw.getNode("Tx1_debug_RAM")
         debug_RAM_start   = hw.getNode("Tx1_debug_RAM_start")
-        rst_Rx_addr_cnt   = hw.getNode("rst_Rx1_addr_cnt")
     else:
-        Init_EC_IC_moduls = hw.getNode("Init_TOFHIR_EC_IC_modules")
-        TOFHIR_status     = hw.getNode("LINK0_status")   
+        Init_EC_IC_moduls = hw.getNode("Init_TOFHIR_EC_IC_modules0")
+        TOFHIR_status     = hw.getNode("LINK0_RHCnt_status")   
         debug_RAM 	  = hw.getNode("Tx0_debug_RAM")
         debug_RAM_start   = hw.getNode("Tx0_debug_RAM_start")
-        rst_Rx_addr_cnt   = hw.getNode("rst_Rx0_addr_cnt")
-  
+
+     
     Value = []
     MEM1 = []
 
     wait = 1
-  
-    # Reset TOFHIR Rx address pointer counter
-    TxValue = 1  
-    rst_Rx_addr_cnt.write(int(TxValue)); 
-    hw.dispatch();
+
 
     #########################
     Value = 1;
@@ -59,10 +58,10 @@ if __name__ == '__main__':
     hw.dispatch();
     time.sleep(wait) # wait 1 sec
 
-
+     
     #print "----------- data in output lpGBT uplink for each e-port ------------"
     Num_ePort = 28;
-    depht = 8
+    depht = 32
     Nword = depht*8*4
     MEM1_decode = []
     MEM1=debug_RAM.readBlock(int(Nword));
@@ -85,23 +84,27 @@ if __name__ == '__main__':
         else :
          for z in range(4): 
             shift = ( int((depht-x-1)*8) );
-            print shift,x,Nword;
+            #print shift,x,Nword;
             FrameData = ( (MEM1[xx]>>(z*8))&0xFF )<<(int(shift)) 
             MEM1_decode[z+yy*4] = MEM1_decode[z+4*yy] + FrameData;
          yy = yy + 1
          xx = xx + 1 
       yy =0 
 
-    print "--------------------- uplink 1 data -------------------------"
+    print "--------------------- uplink", link ,"data -------------------------"
     for x in range(Num_ePort): 
        print "e-port ", x, " " , "data in output lpGBT =", hex(MEM1_decode[x])  
  
     print "************************************************"
+    #print "e-port ", 0, "ID1" , " " , "data in output lpGBT =", hex(MEM1_decode[0])
+    #print "e-port ", 0, "ID1" , " " , "data in output lpGBT =", bin(MEM1_decode[0])
+
     print "e-port ", 13, "ID1" , " " , "data in output lpGBT =", hex(MEM1_decode[13])
     print "e-port ", 13, "ID1" , " " , "data in output lpGBT =", bin(MEM1_decode[13])
     print " "
-    print "e-port ", 14, "ID0" , " " , "data in output lpGBT =", hex(MEM1_decode[14])
-    print "e-port ", 14, "ID0" , " " , "data in output lpGBT =", bin(MEM1_decode[14])
+    #print "e-port ", 14, "ID0" , " " , "data in output lpGBT =", hex(MEM1_decode[14])
+    #print "e-port ", 14, "ID0" , " " , "data in output lpGBT =", bin(MEM1_decode[14])
+
     #xx = 0;
     #for x in range(64): 
     #   print "MEM", x, " " , "data in output lpGBT =", hex(MEM1[x])

@@ -147,7 +147,8 @@ if __name__ == '__main__':
     connectionMgr = uhal.ConnectionManager("file://" + connectionFilePath);
     hw = connectionMgr.getDevice(deviceId);
 
-    Init_All_modules   = hw.getNode("Init_TOFHIR_EC_IC_modules")
+    Init_All_modules0   = hw.getNode("Init_TOFHIR_EC_IC_modules0")
+    Init_All_modules1   = hw.getNode("Init_TOFHIR_EC_IC_modules1")
     statusLink0       = hw.getNode("LINK0_RHCnt_status")   #hw.getNode("A3")
     statusLink1       = hw.getNode("LINK1_RHCnt_status")   #hw.getNode("A3")
     statusLinks = []
