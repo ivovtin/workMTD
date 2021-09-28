@@ -86,7 +86,7 @@ def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM,
     channelIDs  = mapLink[connectorID];
     channelMask = enableLink[str(linkID)][connectorID]
     for index,channel in enumerate(channelIDs) :
-        if (RAM_status>>channelIDs[index] & 0x1) == 1 and channelMask[index] == 1 and channelRead[linkID][connectorID][index] == 1:
+        if (RAM_status>>channelIDs[index] & 0x1) == 1 and channelMask[index] == 1 and channelRead[str(linkID)][connectorID][index] == 1:
             print("----------- Read Rx answer e-port {}------------".format(channel))
             readeportwttag(channel, nWord, TTnWord, TOFHIR_RxBRAM[channel], TOFHIR_RxTT[channel], linkID ,file)
             channelRead[str(linkID)][connectorID][index] = 0
