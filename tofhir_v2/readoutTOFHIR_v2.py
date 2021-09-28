@@ -12,9 +12,9 @@ import json
 from collections import OrderedDict
 
 parser =  argparse.ArgumentParser(description='Readout TOFHIR')
-parser.add_argument('-f', '--outFile', dest="nameFile", type=str, default="test", help="Out file name")
-parser.add_argument('-n', '--nCycRead', dest="nCycRead", type=int, default=1, help="Number cycles for read")
-parser.add_argument('-j', '--jsonFile', dest="jsonName", type=str, default="readout_settings_tofhir.json", help="Json config file")
+parser.add_argument('-f', '--outFile', dest="nameFile", type=str, default="test", help="Out file name (default is test.rawf)")
+parser.add_argument('-n', '--nCycRead', dest="nCycRead", type=int, default=1, help="Number cycles for read (default is 1)")
+parser.add_argument('-j', '--jsonFile', dest="jsonName", type=str, default="readout_settings_tofhir.json", help="Json config file (default is readout_settings_tofhir.json)")
 
 opt = parser.parse_args()
 
