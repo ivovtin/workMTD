@@ -30,19 +30,19 @@ if __name__ == '__main__':
     
     wait = 1
 
-    TxValue = 0x00000070    
+    TxValue = 0x00000070    # chip addr
     IC_Write_txConf.write(int(TxValue)); 
     hw.dispatch();
     print "internal address =", hex(TxValue)
 
-    TxValue = 0x00000004  # Number of words/bytes to be read (16bits only for read transactions) field
+    TxValue = 0x00000004    # reg_addr   # Number of words/bytes to be read (16bits only for read transactions) field
     IC_Write_txNWord.write(int(TxValue)); 
     hw.dispatch();
     print "Read NWords =", hex(TxValue)
     time.sleep(1) # wait 1 sec
 
-    #TxValue = 0x00000000
-    #IC_Write_txData.write(int(TxValue));
+    #TxValue = 0x00000000  # reg_data 
+    #IC_Write_txData.write(int(TxValue));    # write data
     #hw.dispatch();
     #print "Tx data =", hex(TxValue)
     #time.sleep(1);
