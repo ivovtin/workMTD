@@ -8,24 +8,15 @@ import operator
 import datetime
 import copy
 import argparse
+import json
+from collections import OrderedDict
 
 parser =  argparse.ArgumentParser(description='Readout TOFHIR')
 parser.add_argument('-f', '--outFile', dest="nameFile", type=str, default="test", help="Out file name")
 parser.add_argument('-n', '--nCycRead', dest="nCycRead", type=int, default=1, help="Number cycles for read")
+parser.add_argument('-j', '--jsonFile', dest="jsonName", type=str, default="readout_settings_tofhir.json", help="Json config file")
 
 opt = parser.parse_args()
-
-mapLink = {'A' : [0,1,2,3,4,5] , 'B' : [9,10,11,12,13,14], 'C' : [22,23,24,25,26,27], 'D': [15,16,17,18,19,20]
-
-enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-              1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,1,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
-'''
-enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-              1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
-'''
-
-readMaskIni = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-               1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
 
 
 def readeport(ChID, nWord, TOFHIR_RxBRAMch,linkID, file):
@@ -35,8 +26,6 @@ def readeport(ChID, nWord, TOFHIR_RxBRAMch,linkID, file):
     yy = 0
     MEM=TOFHIR_RxBRAMch.readBlock(int(nWord));
     hw.dispatch();
-    #print hex(MEM[0])
-    # print result
     for x in range(int(nWord)): 
         if yy == 3:
             FrameData = FrameData + ((MEM[x]&0xFFFFFFFF)<<yy*32)
@@ -78,7 +67,6 @@ def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
        TTData = (tMEM[t*2]&0xFFFFFFFF)+((tMEM[t*2+1]&0xFFFFFFFF)<<32)
        tTag.append(hex(TTData))
 
-    #print hex(MEM[0])
     # print result
     for x in range(int(nWord)): 
        if yy == 3:
@@ -93,18 +81,15 @@ def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
 
 
 def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, linkID,  channelRead, file):  
-    #time.sleep(0.01)
     RAM_status = TOFHIR_rxRAM_status.read(); 
     hw.dispatch();                           
     channelIDs  = mapLink[connectorID];
-    channelMask = enableLink[linkID][connectorID]
+    channelMask = enableLink[str(linkID)][connectorID]
     for index,channel in enumerate(channelIDs) :
         if (RAM_status>>channelIDs[index] & 0x1) == 1 and channelMask[index] == 1 and channelRead[linkID][connectorID][index] == 1:
             print("----------- Read Rx answer e-port {}------------".format(channel))
             readeportwttag(channel, nWord, TTnWord, TOFHIR_RxBRAM[channel], TOFHIR_RxTT[channel], linkID ,file)
-            channelRead[linkID][connectorID][index] = 0
-#        elif (channelMask[index] == 1): 
-#            channelRead[linkID][connectorID][index] = 1
+            channelRead[str(linkID)][connectorID][index] = 0
 
 
 if __name__ == '__main__':
@@ -140,21 +125,9 @@ if __name__ == '__main__':
 
     Tx0_Trig_Freq       = hw.getNode("Tx0_Trig_Freq")
     Tx0_Resync_Freq     = hw.getNode("Tx0_Resync_Freq")
-    Tx0_Resync_CMD 	= hw.getNode("Tx0_Resync_CMD")
-    Tx0_Trigger_CMD 	= hw.getNode("Tx0_Trigger_CMD")
-    Tx0_Config_CMD 	= hw.getNode("Tx0_Config_CMD")
-    Tx0_debug_Reg 	= hw.getNode("Tx0_debug_Reg")
-    Tx0_debug_RAM 	= hw.getNode("Tx0_debug_RAM")
-    Tx0_debug_RAM_start = hw.getNode("Tx0_debug_RAM_start")
 
     Tx1_Trig_Freq       = hw.getNode("Tx1_Trig_Freq")
     Tx1_Resync_Freq     = hw.getNode("Tx1_Resync_Freq")
-    Tx1_Resync_CMD 	= hw.getNode("Tx1_Resync_CMD")
-    Tx1_Trigger_CMD 	= hw.getNode("Tx1_Trigger_CMD")
-    Tx1_Config_CMD 	= hw.getNode("Tx1_Config_CMD")
-    Tx1_debug_Reg 	= hw.getNode("Tx1_debug_Reg")
-    Tx1_debug_RAM 	= hw.getNode("Tx1_debug_RAM")
-    Tx1_debug_RAM_start = hw.getNode("Tx1_debug_RAM_start")
 
     Rx0RAM_status       = hw.getNode("Rx0RAM_status")
     Rx1RAM_status       = hw.getNode("Rx1RAM_status")
@@ -185,6 +158,14 @@ if __name__ == '__main__':
     Tx1_Trig_Freq.write(int(TxValue)); 
     hw.dispatch();
 
+    # Open JSON file with mapLink, enableLink, readMaskIni
+    with open(opt.jsonName) as jsonFile:
+       data = json.load(jsonFile, object_pairs_hook=OrderedDict)
+
+    mapLink = data['mapLink']
+    enableLink = data['enableLink']
+    readMaskIni = data['readMaskIni']
+
     # ouput file    
     print "File name: "+opt.nameFile+".rawf"
     file = open(opt.nameFile+".rawf","w")
@@ -200,16 +181,13 @@ if __name__ == '__main__':
     while nCycle < int(opt.nCycRead) and Timeout < 10000:
         print("cycle: %d") % nCycle
         for link in range(nlinks):
-            #def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, channelRead, file): 
             readFEB('A', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
             readFEB('B', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
             readFEB('C', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
             readFEB('D', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
-            print(channelRead[link].values())
+            print(channelRead[str(link)].values())
         if readMaskIni == channelRead:
-        #if reduce(operator.or_,channelRead) == 0: # buffer full flag analysis
             nCycle = nCycle + 1;
-            #print(nCycle) 
             print("cycle: %d") % nCycle
             print("Total: %d") % opt.nCycRead
             channelRead         = copy.deepcopy(enableLink)
