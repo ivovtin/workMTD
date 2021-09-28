@@ -1,7 +1,7 @@
 #!/bin/env python
 
-import random # For randint
-import sys # For sys.argv and sys.exit
+import random 
+import sys 
 import uhal
 import time
 import operator
@@ -15,32 +15,10 @@ parser.add_argument('-n', '--nCycRead', dest="nCycRead", type=int, default=1, he
 
 opt = parser.parse_args()
 
-mapLink = {'A' : [0,1,2,3,4,5] , 'B' : [9,10,11,12,13,14], 'C' : [22,23,24,25,26,27], 'D': [15,16,17,18,19,20]} 
+mapLink = {'A' : [0,1,2,3,4,5] , 'B' : [9,10,11,12,13,14], 'C' : [22,23,24,25,26,27], 'D': [15,16,17,18,19,20]
 
-# masking for swapped FE and internal test pulse
-# enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [1,0,1,1,0,1]},
-#               1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [1,0,1,1,1,1]}}
-
-# masking for standard FE position and internal test pulse
-#enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,1]},
-#              1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,1]}}
-
-
-#masking for test pulses and different CC ports or FE position
-# enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [1,0,1,1,0,1], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-#               1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [1,0,1,1,1,1]}}
-# enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-#               1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [1,0,1,1,0,1]}}
-# enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [1,0,1,1,0,1]},
-#               1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
-
-
-# masking for laser runs, standard FE position
-#enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-#              1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
-
-enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,1,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
-              1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
+enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
+              1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,1,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
 '''
 enableLink = {0 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]},
               1 :{ 'A' : [0,0,0,0,0,0] , 'B' : [0,0,0,0,0,0], 'C' : [0,0,0,0,0,0], 'D': [0,0,0,0,0,0]}}
@@ -81,7 +59,8 @@ def readTimeTag(ChID, nWord, TOFHIR_RxTTch, linkID, file):
     for x in range(int(nWord-1)): 
        TTData = (MEM[x*2]&0xFFFFFFFF)+((MEM[x*2+1]&0xFFFFFFFF)<<32)
        file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+ hex(TTData) + "\n"))
-      
+     
+ 
 def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
     FrameData = 0
     portMEM = []
@@ -99,7 +78,6 @@ def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
        TTData = (tMEM[t*2]&0xFFFFFFFF)+((tMEM[t*2+1]&0xFFFFFFFF)<<32)
        tTag.append(hex(TTData))
 
-
     #print hex(MEM[0])
     # print result
     for x in range(int(nWord)): 
@@ -113,7 +91,8 @@ def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
            FrameData = FrameData + ((portMEM[x]&0xFFFFFFFF)<<yy*32)
            yy = yy + 1 
 
-def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, linkID,  channelRead, file): # This many number of inputs indicates that we need a class... Later... 
+
+def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, linkID,  channelRead, file):  
     #time.sleep(0.01)
     RAM_status = TOFHIR_rxRAM_status.read(); 
     hw.dispatch();                           
@@ -127,11 +106,12 @@ def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM,
 #        elif (channelMask[index] == 1): 
 #            channelRead[linkID][connectorID][index] = 1
 
+
 if __name__ == '__main__':
     
+    # Creating the HwInterface
     uhal.disableLogging()
 
-    # Creating the HwInterface
     connectionMgr = uhal.ConnectionManager("file://" + "Real_connections.xml");
     hw = connectionMgr.getDevice("KCU105real");
 
@@ -227,7 +207,7 @@ if __name__ == '__main__':
             readFEB('D', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
             print(channelRead[link].values())
         if readMaskIni == channelRead:
-#        if reduce(operator.or_,channelRead) == 0: # buffer full flag analysis
+        #if reduce(operator.or_,channelRead) == 0: # buffer full flag analysis
             nCycle = nCycle + 1;
             #print(nCycle) 
             print("cycle: %d") % nCycle
