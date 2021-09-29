@@ -10,7 +10,7 @@ import copy
 import argparse
 import json
 from collections import OrderedDict
-from readTOFHIRclass import tofhir
+from readTOFHIR_tools import tofhir
 
 parser =  argparse.ArgumentParser(description='Readout TOFHIR')
 parser.add_argument('-f', '--outFile', dest="nameFile", type=str, default="test", help="Out file name (default is test.rawf)")
@@ -18,79 +18,6 @@ parser.add_argument('-n', '--nCycRead', dest="nCycRead", type=int, default=1, he
 parser.add_argument('-j', '--jsonFile', dest="jsonName", type=str, default="readout_settings_tofhir.json", help="Json config file (default is readout_settings_tofhir.json)")
 
 opt = parser.parse_args()
-
-
-def readeport(ChID, nWord, TOFHIR_RxBRAMch,linkID, file):
-    FrameData = 0
-    MEM = []
-    xx = 1
-    yy = 0
-    MEM=TOFHIR_RxBRAMch.readBlock(int(nWord));
-    hw.dispatch();
-    for x in range(int(nWord)): 
-        if yy == 3:
-            FrameData = FrameData + ((MEM[x]&0xFFFFFFFF)<<yy*32)
-            yy = 0
-            file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+ hex(FrameData) + "\n"))
-            xx = xx + 1
-            FrameData = 0
-        else : 
-            FrameData = FrameData + ((MEM[x]&0xFFFFFFFF)<<yy*32)
-            yy = yy + 1 
-
-
-def readTimeTag(ChID, nWord, TOFHIR_RxTTch, linkID, file):
-    TTData = 0
-    MEM = []
-    xx = 1
-    yy = 0
-    MEM=TOFHIR_RxTTch.readBlock(int(nWord*2));
-    hw.dispatch();
-    for x in range(int(nWord-1)): 
-       TTData = (MEM[x*2]&0xFFFFFFFF)+((MEM[x*2+1]&0xFFFFFFFF)<<32)
-       file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+ hex(TTData) + "\n"))
-     
- 
-def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
-    FrameData = 0
-    portMEM = []
-    TTData = 0
-    tMEM = []
-    tTag = []
-    xx = 1
-    yy = 0
-    portMEM=RxBRAMch.readBlock(int(nWord));
-    hw.dispatch();
-    tMEM=RxTTch.readBlock(int(tnWord*2));
-    hw.dispatch();
-
-    for t in range(int(tnWord)): 
-       TTData = (tMEM[t*2]&0xFFFFFFFF)+((tMEM[t*2+1]&0xFFFFFFFF)<<32)
-       tTag.append(hex(TTData))
-
-    # print result
-    for x in range(int(nWord)): 
-       if yy == 3:
-           FrameData = FrameData + ((portMEM[x]&0xFFFFFFFF)<<yy*32)
-           yy = 0
-           file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+tTag[xx-1]+";"+hex(FrameData) + "\n"))
-           xx = xx + 1
-           FrameData = 0
-       else : 
-           FrameData = FrameData + ((portMEM[x]&0xFFFFFFFF)<<yy*32)
-           yy = yy + 1 
-
-
-def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, linkID,  channelRead, file):  
-    RAM_status = TOFHIR_rxRAM_status.read(); 
-    hw.dispatch();                           
-    channelIDs  = mapLink[connectorID];
-    channelMask = enableLink[str(linkID)][connectorID]
-    for index,channel in enumerate(channelIDs) :
-        if (RAM_status>>channelIDs[index] & 0x1) == 1 and channelMask[index] == 1 and channelRead[str(linkID)][connectorID][index] == 1:
-            print("----------- Read Rx answer e-port {}------------".format(channel))
-            readeportwttag(channel, nWord, TTnWord, TOFHIR_RxBRAM[channel], TOFHIR_RxTT[channel], linkID ,file)
-            channelRead[str(linkID)][connectorID][index] = 0
 
 
 if __name__ == '__main__':
@@ -182,10 +109,10 @@ if __name__ == '__main__':
     while nCycle < int(opt.nCycRead) and Timeout < 10000:
         print("cycle: %d") % nCycle
         for link in range(nlinks):
-            readFEB('A', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
-            readFEB('B', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
-            readFEB('C', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
-            readFEB('D', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
+            tofhir.readFEB('A', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
+            tofhir.readFEB('B', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
+            tofhir.readFEB('C', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
+            tofhir.readFEB('D', rxRAMs_status[link], hw, nWord, TTnWord, rxRAMs[link], RxTTs[link], link, channelRead, file) 
             print(channelRead[str(link)].values())
         if readMaskIni == channelRead:
             nCycle = nCycle + 1;
