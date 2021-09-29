@@ -36,8 +36,7 @@ if __name__ == '__main__':
     uhal.disableLogging()
 
     connectionMgr = uhal.ConnectionManager("file://" + "Real_connections.xml");
-    hw = connectionMgr.getDevice("KCU105loc");
-    #hw = connectionMgr.getDevice("KCU105real");
+    hw = connectionMgr.getDevice("KCU105real");
 
     Init_All_modules0   = hw.getNode("Init_TOFHIR_EC_IC_modules0")
     Init_All_modules1   = hw.getNode("Init_TOFHIR_EC_IC_modules1")
