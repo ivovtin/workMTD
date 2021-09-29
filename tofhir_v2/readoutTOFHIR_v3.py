@@ -10,7 +10,7 @@ import copy
 import argparse
 import json
 from collections import OrderedDict
-from readTOFHIR_tools import tofhir
+from readTOFHIR_tools import TOFHIR
 
 parser =  argparse.ArgumentParser(description='Readout TOFHIR')
 parser.add_argument('-f', '--outFile', dest="nameFile", type=str, default="test", help="Out file name (default is test.rawf)")
@@ -21,12 +21,23 @@ opt = parser.parse_args()
 
 
 if __name__ == '__main__':
-    
+
+    # Open JSON file with mapLink, enableLink, readMaskIni
+    with open(opt.jsonName) as jsonFile:
+       data = json.load(jsonFile, object_pairs_hook=OrderedDict)
+
+    mapLink = data['mapLink']
+    enableLink = data['enableLink']
+    readMaskIni = data['readMaskIni']
+
+    tofhir = TOFHIR(mapLink, enableLink, readMaskIni)
+
     # Creating the HwInterface
     uhal.disableLogging()
 
     connectionMgr = uhal.ConnectionManager("file://" + "Real_connections.xml");
-    hw = connectionMgr.getDevice("KCU105real");
+    hw = connectionMgr.getDevice("KCU105loc");
+    #hw = connectionMgr.getDevice("KCU105real");
 
     Init_All_modules0   = hw.getNode("Init_TOFHIR_EC_IC_modules0")
     Init_All_modules1   = hw.getNode("Init_TOFHIR_EC_IC_modules1")
@@ -85,14 +96,6 @@ if __name__ == '__main__':
     Tx0_Trig_Freq.write(int(TxValue)); 
     Tx1_Trig_Freq.write(int(TxValue)); 
     hw.dispatch();
-
-    # Open JSON file with mapLink, enableLink, readMaskIni
-    with open(opt.jsonName) as jsonFile:
-       data = json.load(jsonFile, object_pairs_hook=OrderedDict)
-
-    mapLink = data['mapLink']
-    enableLink = data['enableLink']
-    readMaskIni = data['readMaskIni']
 
     # ouput file    
     print "File name: "+opt.nameFile+".rawf"

@@ -6,9 +6,14 @@ import operator
 import datetime
 import copy
 
-class tofhir:
+class TOFHIR:
 
-    def readeport(ChID, nWord, TOFHIR_RxBRAMch,linkID, file):
+    def __init__(self, mapLink, enableLink, readMaskIni):
+        self.mapLink = mapLink
+        self.enableLink = enableLink
+        self.readMaskIni = readMaskIni
+
+    def readeport(self, ChID, nWord, TOFHIR_RxBRAMch,linkID, file):
         FrameData = 0
         MEM = []
         xx = 1
@@ -24,9 +29,8 @@ class tofhir:
                 FrameData = 0
             else :
                 FrameData = FrameData + ((MEM[x]&0xFFFFFFFF)<<yy*32)
-                yy = yy + 1
-
-    def readTimeTag(ChID, nWord, TOFHIR_RxTTch, linkID, file):
+    
+    def readTimeTag(self, ChID, nWord, TOFHIR_RxTTch, linkID, file):
         TTData = 0
         MEM = []
         xx = 1
@@ -37,7 +41,7 @@ class tofhir:
             TTData = (MEM[x*2]&0xFFFFFFFF)+((MEM[x*2+1]&0xFFFFFFFF)<<32)
             file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+ hex(TTData) + "\n"))
 
-    def readeportwttag(ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
+    def readeportwttag(self, ChID, nWord, tnWord, RxBRAMch, RxTTch, linkID, file):
         FrameData = 0
         portMEM = []
         TTData = 0
@@ -57,20 +61,20 @@ class tofhir:
         # print result
         for x in range(int(nWord)):
             if yy == 3:
-            FrameData = FrameData + ((portMEM[x]&0xFFFFFFFF)<<yy*32)
-            yy = 0
-            file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+tTag[xx-1]+";"+hex(FrameData) + "\n"))
-            xx = xx + 1
-            FrameData = 0
+                FrameData = FrameData + ((portMEM[x]&0xFFFFFFFF)<<yy*32)
+                yy = 0
+                file.write( str("{:3d};{:3d};{:3d};".format(linkID, ChID, xx)+tTag[xx-1]+";"+hex(FrameData) + "\n"))
+                xx = xx + 1
+                FrameData = 0
             else :
                 FrameData = FrameData + ((portMEM[x]&0xFFFFFFFF)<<yy*32)
                 yy = yy + 1
 
-    def readFEB(connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, linkID,  channelRead, file):
+    def readFEB(self, connectorID, TOFHIR_rxRAM_status, hw, nWord, TTnWord, TOFHIR_RxBRAM, TOFHIR_RxTT, linkID,  channelRead, file):
         RAM_status = TOFHIR_rxRAM_status.read();
         hw.dispatch();
-        channelIDs  = mapLink[connectorID];
-        channelMask = enableLink[str(linkID)][connectorID]
+        channelIDs  = self.mapLink[connectorID];
+        channelMask = self.enableLink[str(linkID)][connectorID]
         for index,channel in enumerate(channelIDs) :
             if (RAM_status>>channelIDs[index] & 0x1) == 1 and channelMask[index] == 1 and channelRead[str(linkID)][connectorID][index] == 1:
                 print("----------- Read Rx answer e-port {}------------".format(channel))
