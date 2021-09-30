@@ -30,13 +30,13 @@ if __name__ == '__main__':
     enableLink = data['enableLink']
     readMaskIni = data['readMaskIni']
 
-    tofhir = TOFHIR(mapLink, enableLink, readMaskIni)
-
     # Creating the HwInterface
     uhal.disableLogging()
 
     connectionMgr = uhal.ConnectionManager("file://" + "Real_connections.xml");
     hw = connectionMgr.getDevice("KCU105real");
+
+    tofhir = TOFHIR(mapLink, enableLink, readMaskIni, hw)
 
     Init_All_modules0   = hw.getNode("Init_TOFHIR_EC_IC_modules0")
     Init_All_modules1   = hw.getNode("Init_TOFHIR_EC_IC_modules1")
