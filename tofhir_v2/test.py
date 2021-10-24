@@ -27,30 +27,31 @@ if __name__ == '__main__':
     packet = "Reg" + str(reg) 
     word8_str = "0x80"
     word7_str = ""
-    with open("config_tofhir_v2.json") as jsonFile:
+    #with open("config_tofhir_v2.json") as jsonFile:
+    with open("config_tofhir_2x.json") as jsonFile:
         data = json.load(jsonFile, object_pairs_hook=OrderedDict)
-        print(data[packet])
+        #print(data[packet])
         for key0, value0 in data[packet][0].iteritems():
             ##del data[packet][0]['R/W mode'] 
             if int(data[packet][0]['R/W mode'])  == 1 and key0 == "Register address":
                 ##print data[packet][0]['R/W mode'] 
-                print key0, value0
+                #print key0, value0
                 regx = int(value0, base=16)  
-                print regx  
-                print bin(regx)  
-                print format(regx, '08b')  
-                print hex(regx) 
+                #print regx  
+                #print bin(regx)  
+                #print format(regx, '08b')  
+                #print hex(regx) 
                 ##replace bit 
                 regx |= 1 << 7 
-                print bin(regx)  
-                print format(regx, '08b')  
-                print hex(regx)
+                #print bin(regx)  
+                #print format(regx, '08b')  
+                #print hex(regx)
                 #value0 = hex(regx) 
                 value0 = hex(regx).replace("0x","")
                 ##value0 = str(regx) 
             if key0 != "R/W mode":
                 word8_str += str(value0)
-                print word8_str
+            print word8_str
         for key1, value1 in data[packet][1].iteritems():
             word7_str += str(value1)
 

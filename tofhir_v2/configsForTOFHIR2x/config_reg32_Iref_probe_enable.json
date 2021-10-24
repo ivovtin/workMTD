@@ -1,0 +1,1190 @@
+[
+    {
+        "Chip_00010101_reg32": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "20", 
+                "Register length": "F9"
+            }, 
+            {
+                "dword7": "00006083"
+            }, 
+            {
+                "dword6": "3C00180B"
+            }, 
+            {
+                "dword5": "0C0282C1"
+            }, 
+            {
+                "dword4": "80603018"
+            }, 
+            {
+                "dword3": "03000000"
+            }, 
+            {
+                "dword2": "00804020"
+            }, 
+            {
+                "dword1": "00001800"
+            }, 
+            {
+                "dword0": "80E10000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg00": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "00", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583C56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg01": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "01", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg02": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "02", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg03": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "03", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg04": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "04", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg05": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "05", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg06": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "06", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg07": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "07", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg08": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "08", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg09": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "09", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg10": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "0A", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg11": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "0B", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg12": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "0C", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg13": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "0D", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg14": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "0E", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg15": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "0F", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg16": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "10", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg17": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "11", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg18": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "12", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg19": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "13", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg20": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "14", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg21": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "15", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg22": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "16", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg23": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "17", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg24": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "18", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg25": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "19", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg26": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "1A", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg27": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "1B", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg28": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "1C", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg29": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "1D", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg30": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "1E", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }, 
+    {
+        "Chip_00010101_reg31": [
+            {
+                "CC link": "01", 
+                "CC port": "01", 
+                "ChipID": "01", 
+                "R/W mode": "1", 
+                "Register address": "1F", 
+                "Register length": "A4"
+            }, 
+            {
+                "dword7": "E0E1F126"
+            }, 
+            {
+                "dword6": "583E56F9"
+            }, 
+            {
+                "dword5": "01C0A660"
+            }, 
+            {
+                "dword4": "80A723B9"
+            }, 
+            {
+                "dword3": "00000002"
+            }, 
+            {
+                "dword2": "00000020"
+            }, 
+            {
+                "dword1": "00000000"
+            }, 
+            {
+                "dword0": "00000000"
+            }
+        ]
+    }
+]
