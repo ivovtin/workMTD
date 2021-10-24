@@ -125,7 +125,7 @@ class TOFHIR:
     	word2_str = ""
     	word1_str = ""
     	word0_str = ""
-   	with open(configName) as jsonFile:
+   	with open(configFile) as jsonFile:
        	    data = json.load(jsonFile, object_pairs_hook=OrderedDict)
             length = len(data)
             k=0
@@ -222,28 +222,28 @@ class TOFHIR:
            out.close()
 
 
-    def config(self, link, configName):
+    def config(self, link, configFile):
         print "Start configuration TOFHIR for", link, "link"
 	#Core logic RESET 
 	self.chipReset(link, 6)
 	print "---------- Set ASIC GLOBAL COMMAND ------------"
-	self.configReg(link, 'Chip_00010101_reg32', configName)
+	self.configReg(link, 'Chip_00010101_reg32', configFile)
 	
 	#Global Reset to all ASIC!
 	self.chipReset(link, 16)
 	
 	print "---------- Set configuration mode -------------"
-	self.configReg(link, 'Chip_00010101_reg33', configName)
+	self.configReg(link, 'Chip_00010101_reg33', configFile)
 	#Core logic RESET 
         self.chipReset(link, 6)
 
 	print "---------- Set ASIC GLOBAL COMMAND ------------"
-        self.configReg(link, 'Chip_00010101_reg32', configName)
+        self.configReg(link, 'Chip_00010101_reg32', configFile)
 	#Core logic RESET 
         self.chipReset(link, 6)
 
 	print "---------- Set ASIC CHANNEL COMMAND ------------"
-        self.configReg(link, 'Chip_00010101_reg00', configName)
+        self.configReg(link, 'Chip_00010101_reg00', configFile)
         #Core logic RESET 
         self.chipReset(link, 6)
 

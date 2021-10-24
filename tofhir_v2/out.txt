@@ -1,0 +1,1000 @@
+   32  vi readoutTOFHIR_v2.py
+   33  . configTOFHIRv2.sh
+   34  ls -ltr
+   35  python readoutTOFHIR_v2.py -h
+   36  vi test.rawf 
+   37  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   38  vi readoutTOFHIR_v2.py
+   39  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   40  ls -ltr
+   41  vi test_v2.rawf
+   42  ls -ltr
+   43  vi readoutTOFHIR_v2.py
+   44  rm test_v2.rawf
+   45  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   46  rm test_v2.rawf
+   47  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   48  ls -ltr
+   49  vi test_v2.rawf 
+   50  vi readoutTOFHIR_v2.py
+   51  python readoutTOFHIR_v2.py -f test_v3 -n 1
+   52  ls -ltr
+   53  diff test_v2.rawf test_v3.rawf
+   54  ls -ltr
+   55  vi test_v3.rawf
+   56  vi test.rawf
+   57  ls -ltr
+   58  rm test_v3.rawf
+   59  ls -ltr
+   60  vi readoutTOFHIR_v2.py
+   61  vi readoutTOFHIR.py
+   62  vi readoutTOFHIR_v2.py
+   63  exit
+   64  ls -ltr
+   65  cd development/workMTD/tofhir_v2/
+   66  ls -ltr
+   67  vi readoutTOFHIR_v2.py
+   68  . configTOFHIRv2.sh 
+   69  python readoutTOFHIR_v2.py test_v2 1
+   70  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   71  vi readoutTOFHIR_v2.py
+   72  ls -ltr
+   73  vi readoutTOFHIR.py
+   74  vi readoutTOFHIR_v2.py
+   75  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   76  vi readoutTOFHIR.py
+   77  vi readoutTOFHIR_v2.py
+   78  python readoutTOFHIR_v2.py -f test_v2 -n 1
+   79  vi readoutTOFHIR_v2.py
+   80  exit
+   81  who
+   82  ls -ltr
+   83  ls -ltr soft/
+   84  ls -ltr
+   85  who
+   86  ls -ltr
+   87  cd development/
+   88  ls -ltr
+   89  cd workMTD/
+   90  ls -ltr
+   91  git branch -v
+   92  git pull
+   93  ls -ltr tofhir_v2
+   94  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+   95  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk320.py
+   96  ls -ltr
+   97  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+   98  mkdir lpGBTconfig
+   99  cd lpGBTconfig/
+  100  cp /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk320.py .
+  101  ls -ltr
+  102  git add lpgbt_transceiver_mode_clk320.py
+  103  git commit -m "I2C config"
+  104  git push
+  105  cd --
+  106  ls -ltr
+  107  ssh-keygen -t ed25519 -C "ivan.ovtin@cern.ch"
+  108  ls -ltr .ssh
+  109  vi .ssh/id_ed25519.pub
+  110  cd -
+  111  .ls
+  112  ls -ltr
+  113  git push
+  114  exit
+  115  cd development/workMTD/lpGBTconfig/
+  116  ls -ltr
+  117  git add lpgbt_transceiver_mode_clk320.py
+  118  git commit -m "I2C config"
+  119  git push
+  120  cd ../
+  121  ls -ltr
+  122  git pull
+  123  git push
+  124  ls -ltr
+  125  git pull
+  126  ls -ltr
+  127  who
+  128  ls -ltr /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk320.py 
+  129  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+  130  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_config_DONGLE.pyc
+  131  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_config_DONGLE.py
+  132  cp /home/software/mtd-daq/lpGBT_cont/lpgbt_config_DONGLE.py .
+  133  ls -ltr
+  134  mv lpgbt_config_DONGLE.py lpGBTconfig/
+  135  ls -ltr
+  136  cd lpGBTconfig/
+  137  ls -ltr
+  138  git add lpgbt_config_DONGLE.py
+  139  git commit -m "24/09/2021"
+  140  git push
+  141  cd ../
+  142  git add lpGBTconfig/lpgbt_config_DONGLE.py
+  143  git commit -m "24/09/2021"
+  144  git push
+  145  ls -ltr
+  146  ls -ltr lpGBTconfig/
+  147  cd lpGBTconfig/
+  148  ls -ltr
+  149  git add lpgbt_config_DONGLE.py
+  150  git commit -m "24/09/2021"
+  151  git push
+  152  ls -ltr
+  153  git branch -v
+  154  cd ../
+  155  ls -ltr
+  156  vi README.md 
+  157  ls -ltr
+  158  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+  159  ls -ltr /home/software/mtd-daq/lpGBT_cont/lpgbt_registers.py
+  160  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_registers.py
+  161  cd development/workMTD/lpGBTconfig/
+  162  ls -ltr
+  163  cp /home/software/mtd-daq/lpGBT_cont/lpgbt_registers.py .
+  164  vi /home/software/mtd-daq/lpGBT_cont/gbt_vldb.py
+  165  cp /home/software/mtd-daq/lpGBT_cont/gbt_vldb.py .
+  166  ls -ltr
+  167  vi gbt_vldb.py
+  168  cp /home/software/mtd-daq/lpGBT_cont/usb_dongle.py .
+  169  ls -ltr
+  170  vi usb_dongle.py
+  171  vi gbt_vldb.py
+  172  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+  173  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_IC.py
+  174  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_config_DONGLE.py
+  175  ls -ltr
+  176  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_config_TESTER.py 
+  177  ls -ltr
+  178  git add lpgbt_registers.py gbt_vldb.py usb_dongle.py
+  179  git commit -m "24/09/2021"
+  180  git push
+  181  ls -ltr
+  182  ды -дек /home/software/mtd-daq/lpGBT_cont/
+  183  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+  184  ls -ltr /home/software/mtd-daq/lpGBT_cont/b27_kcu105_lpGBT/
+  185  ls -ltr /home/software/mtd-daq/lpGBT_cont/v12_final/2
+  186  ls -ltr /home/software/mtd-daq/lpGBT_cont/v12_final/
+  187  ls -ltr
+  188  grep -r SCParityValid .
+  189  grep -r PUSM .
+  190  grep -r 0xA3 .
+  191  grep -r 0xa3 .
+  192  grep -r fuse .
+  193  grep -r FUSE .
+  194  who
+  195  grep -r pllConfigDone .
+  196  grep -r pll .
+  197  grep -r PLL .
+  198  grep -r PUSMStatus .
+  199  grep -r PUSM .
+  200  who
+  201  sudo python3 /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk320.py
+  202  grep -r highSpeedDataOutInvert .
+  203  grep -r LDDataSource .
+  204  grep -r ULDataSource .
+  205  grep -r  LDForceEnable .
+  206  grep -r ChipConfig .
+  207  ls -ltr
+  208  grep -r LDConfigH .
+  209  grep -r LD .
+  210  grep -r EDINGCP .
+  211  grep -r EDIN .
+  212  grep -r ed .
+  213  grep -r EPRXDllConfig .
+  214  grep -r I2C_WRITE .
+  215  grep -r I2C .
+  216  grep -r I2CMTransEnable .
+  217  grep -r I2CMTransConfig .
+  218  grep -r I2CM0DATA0 .
+  219  grep -r CHIPID0 .
+  220  grep -r CHIPID1 .
+  221  grep -r DACCal0 .
+  222  grep -r DACCal .
+  223  grep -r FUSE0x00_CHIPID0 .
+  224  grep -r CHIPID0 .
+  225  grep -r CHIPID1 .
+  226  grep -r CHIPID2 .
+  227  exit
+  228  ls -ltr
+  229  who
+  230  cd development/workMTD/lpGBTconfig/
+  231  ls -ltr
+  232  grep -r mode .
+  233  grep -r SC_I2C .
+  234  grep -r SC .
+  235  ls -ltr 
+  236  vi lpgbt_transceiver_mode_clk320.py
+  237  vi lpgbt_config_DONGLE.py 
+  238  vi lpgbt_transceiver_mode_clk320.py
+  239  vi lpgbt_config_DONGLE.py 
+  240  grep -r gbtx_reset .
+  241  vi lpgbt_config_DONGLE.py 
+  242  grep -r PUSMSTATUS .
+  243  vi lpgbt_config_DONGLE.py 
+  244  grep -r gbtx_read_register .
+  245  vi lpgbt_config_DONGLE.py 
+  246  vi gbt_vldb.py
+  247  vi usb_dongle.py 
+  248  vi gbt_vldb.py
+  249  vi usb_dongle.py 
+  250  vi gbt_vldb.py
+  251  vi usb_dongle.py 
+  252  vi lpgbt_transceiver_mode_clk320.py
+  253  grep -r enable_EC .
+  254  vi lpgbt_config_DONGLE.py 
+  255  exit
+  256  црщ
+  257  who
+  258  cd development/workMTD/
+  259  ls -ltr
+  260  cd lpGBTconfig/
+  261  ls -ltr
+  262  grep -r enable_etxlinks .
+  263  vi lpgbt_config_DONGLE.py 
+  264  grep -r gbtx_write_register .
+  265  vi lpgbt_config_DONGLE.py 
+  266  grep -r EPTX10ENABLE .
+  267  vi lpgbt_registers.py
+  268  vi lpgbt_config_DONGLE.py 
+  269  grep -r CHIPID0 .
+  270  grep -r CHIPI .
+  271  grep -r CHIPID0 .
+  272  vi lpgbt_config_DONGLE.py 
+  273  grep -r eclk_setup /.
+  274  grep -r eclk_setup .
+  275  vi lpgbt_config_DONGLE.py 
+  276  vi gbt_vldb
+  277  vi gbt_vldb.py 
+  278  vi usb_dongle.py 
+  279  ls -ltr
+  280  grep -r sc .
+  281  grep -r 020 .
+  282  vi lpgbt_registers.py 
+  283  grep -r b1 .
+  284  grep -r EPTX11CHNCNTR .
+  285  grep -r EPTX10CHNCNTR .
+  286  vi gbt_vldb.py 
+  287  grep -r bxx .
+  288  grep -r xx .
+  289  grep -r 11 .
+  290  vi gbt_vldb.py 
+  291  vi usb_dongle.py 
+  292  vi lpgbt_transceiver_mode_clk320.py 
+  293  vi gbt_vldb.py 
+  294  grep -r ConfigPins .
+  295  grep -r ConfigSelect .
+  296  grep -r 140 .
+  297  grep -r CONFIGPINS .
+  298  grep -r LPGBTMODE .
+  299  ls -ltr /home/
+  300  ls -ltr /home/software/
+  301  ls -ltr /home/software/lpGBT/
+  302  ls -ltr /home/software/lpGBT/lpgbt-fpga-kcu105/
+  303  ls -ltr /home/software/lpGBT/
+  304  ls -ltr /home/software/lpGBT/bundleI2C/
+  305  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/
+  306  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/lpGBT_cont/
+  307  vi /home/software/lpGBT/bundleI2C/controllpGBT/lpGBT_cont/lp
+  308  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/lpGBT_cont/
+  309  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/
+  310  ls -ltr /home/software/lpGBT/bundleI2C/
+  311  ls -ltr /home/software/lpGBT/bundleI2C/me0_scripts/
+  312  vi /home/software/lpGBT/bundleI2C/me0_scripts/README.md 
+  313  ls -ltr /home/software/lpGBT/bundleI2C/
+  314  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/
+  315  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/lpGBT_cont/
+  316  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/
+  317  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/cython-hidapi/
+  318  vi /home/software/lpGBT/bundleI2C/controllpGBT/cython-hidapi/README.rst 
+  319  ls -ltr /home/software/lpGBT/
+  320  ls -ltr /home/software/lpGBT/lpGBT-last/
+  321  ls -ltr /home/software/lpGBT/lpGBT-last/lpgbt-fpga-kcu105/
+  322  vi /home/software/lpGBT/lpGBT-last/lpgbt-fpga-kcu105/README.md 
+  323  ls -ltr /home/software/lpGBT/
+  324  ls -ltr /home/software/
+  325  ls -ltr /home/software/mtd-daq/
+  326  ls -ltr /home/software/mtd-daq/lpgbt-controller/
+  327  vi /home/software/mtd-daq/lpgbt-controller/README.md 
+  328  vi /home/software/mtd-daq/lpgbt-controller/lpgbt_config_DONGLE.py
+  329  vi /home/software/mtd-daq/lpgbt-controller/usb_dongle.py 
+  330  vi /home/software/mtd-daq/lpgbt-controller/gbt_vldb.py 
+  331  vi /home/software/mtd-daq/lpgbt-controller/usb_dongle.py 
+  332  vi /home/software/mtd-daq/lpgbt-controller/gbt_vldb.py 
+  333  vi /home/software/mtd-daq/lpgbt-controller/lpgbt_config_DONGLE.py
+  334  ls -ltr
+  335  ls -ltr /home/software/mtd-daq/lpGBT_cont/
+  336  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_check_status.py
+  337  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_IC.py 
+  338  vi lpgbt_transceiver_mode_clk320.py 
+  339  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_IC.py 
+  340  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode.py 
+  341  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk320.py
+  342  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk40.py 
+  343  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk320.py
+  344  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_clk40.py 
+  345  vi /home/software/mtd-daq/lpGBT_cont/lpgbt_transceiver_mode_txclk1_28G.py 
+  346  ls -ltr
+  347  grep -r lpgbt_send_write_cmd .
+  348  grep -r write_cmd .
+  349  grep -r write .
+  350  vi lpgbt_config_DONGLE.py 
+  351  vi gbt_vldb.py 
+  352  vi lpgbt_config_DONGLE.py 
+  353  vi gbt_vldb.py 
+  354  vi lpgbt_config_DONGLE.py 
+  355  vi gbt_vldb.py 
+  356  vi usb_dongle.py 
+  357  vi gbt_vldb.py 
+  358  vi usb_dongle.py 
+  359  vi lpgbt_
+  360  vi lpgbt_transceiver_mode_clk320.py
+  361  grep -r LpGBT_RESET .
+  362  vi lpgbt_config_DONGLE.py
+  363  vi lpgbt_transceiver_mode_clk320.py
+  364  vi lpgbt_config_DONGLE.py
+  365  vi gbt_vldb.py 
+  366  vi lpgbt_config_DONGLE.py
+  367  grep -r PUSMSTATUS .
+  368  vi lpgbt_config_DONGLE.py
+  369  grep -r STATE_PAUSE_FOR_PLL_CONFIG_DONE .
+  370  vi lpgbt_config_DONGLE.py
+  371  vi lpgbt_transceiver_mode_clk320.py
+  372  vi lpgbt_config_DONGLE.py
+  373  vi lpgbt_transceiver_mode_clk320.py
+  374  vi lpgbt_config_DONGLE.py
+  375  vi lpgbt_transceiver_mode_clk320.py
+  376  vi lpgbt_config_DONGLE.py
+  377  vi lpgbt_transceiver_mode_clk320.py
+  378  vi lpgbt_config_DONGLE.py
+  379  ls -ltr
+  380  vi usb_dongle.py 
+  381  who
+  382  cd development/workMTD/
+  383  ls -ltr
+  384  cd lpGBTconfig/
+  385  ls -ltr
+  386  git pull
+  387  ls -ltr
+  388  exit
+  389  who
+  390  ls -ltr
+  391  ls -ltr /home/
+  392  ls -ltr /home/software/
+  393  ls -ltr /home/software/alexey/
+  394  ls -ltr /home/software/mtd-daq/
+  395  ls -ltr /home/software/mtd-daq/lpgbt-controller/
+  396  ls -ltr /home/software/mtd-daq/
+  397  ls -ltr /home/software/mtd-daq/sw_daq_tofhir_v1/
+  398  ls -ltr /home/software/mtd-daq/sw_daq_tofhir_v1/config
+  399  ls -ltr /home/software/mtd-daq/
+  400  ls -ltr /home/software/mtd-daq/etl-kcu105-ipbus/
+  401  ls -ltr /home/software/mtd-daq/
+  402  ls -ltr /home/software/mtd-daq/debugBTL/
+  403  ls -ltr /home/software/mtd-daq/debugBTL/btl-kcu105-ipbus/
+  404  ls -ltr /home/software/mtd-daq/debugBTL/
+  405  ls -ltr /home/software/mtd-daq
+  406  ls -ltr /home/software/mtd-daqbtl-cctester-ipbus
+  407  ls -ltr /home/software/mtd-daqbtl-cctester-ipbus/
+  408  ls -ltr /home/software/mtd-daq/btl-cctester-ipbus/
+  409  ls -ltr /home/software/mtd-daq
+  410  ls -ltr /home/software/mtd-daq/
+  411  ls -ltr /home/software/mtd-daq/CCv2/
+  412  ls -ltr /home/software/mtd-daq/CCv2/cc2-ipbus/
+  413  ls -ltr /home/software/mtd-daq/CCv2/
+  414  ls -ltr /home/software/mtd-daq/CCv2/lpgbt-controller/
+  415  vi /home/software/mtd-daq/CCv2/lpgbt-controller/lpgbt_registers.py
+  416  ls -ltr /home/software/mtd-daq/CCv2/
+  417  ls -ltr /home/software/mtd-daq/
+  418  ls -ltr /home/software/mtd-daq/sw_daq_tofhir2/
+  419  ls -ltr /home/software/mtd-daq/sw_daq_tofhir2/config
+  420  ls -ltr /home/software/mtd-daq/sw_daq_tofhir2/
+  421  ls -ltr /home/software/mtd-daq/
+  422  ls -ltr /home/software/mtd-daq/btl-kcu105-ipbus/
+  423  ls -ltr /home/software/mtd-daq/
+  424  ls -ltr /home/software/mtd-daq/btlTOFHIR2A/
+  425  ls -ltr /home/software/mtd-daq/btlTOFHIR2A//btlTOFHIR2A.hw/
+  426  ls -ltr /home/software/mtd-daq/btlTOFHIR2A//btlTOFHIR2A.hw/hw_1/
+  427  ls -ltr /home/software/mtd-daq/btlTOFHIR2A/
+  428  ls -ltr /home/software/mtd-daq/
+  429  ls -ltr /home/software/mtd-daq/btl_cc1_test/
+  430  ls -ltr /home/software/mtd-daq/btl_cc1_test/cc1-teststand/
+  431  ls -ltr /home/software/mtd-daq/
+  432  ls -ltr /home/software/
+  433  ls -ltr /home/software/lpGBT/
+  434  ls -ltr /home/software/lpGBT/bundleI2C/
+  435  ls -ltr /home/software/lpGBT/bundleI2C/me0_scripts/
+  436  ls -ltr /home/software/lpGBT/bundleI2C/me0_scripts/lpGBT_cont/
+  437  ls -ltr /home/software/lpGBT/bundleI2C/me0_scripts/
+  438  ls -ltr /home/software/lpGBT/bundleI2C/
+  439  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/
+  440  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/lpGBT_cont/
+  441  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/
+  442  ls -ltr /home/software/lpGBT/bundleI2C/controllpGBT/cython-hidapi/
+  443  ls -ltr /home/software/lpGBT/bundleI2C/
+  444  ls -ltr /home/software/lpGBT/
+  445  ls -ltr /home/software/lpGBT/lpGBT-last/
+  446  ls -ltr /home/software/lpGBT/lpGBT-last/lpgbt-fpga-kcu105
+  447  ls -ltr /home/software/lpGBT/
+  448  ls -ltr /home/software/
+  449  ls -ltr /home/software/ipbus/
+  450  ls -ltr /home/software/ipbus/ipbus_kcu105/
+  451  ls -ltr /home/software/ipbus/ipbus_kcu105/src/
+  452  ls -ltr /home/software/ipbus/ipbus_kcu105/proj/
+  453  ls -ltr /home/software/ipbus/ipbus_kcu105/proj/kcu105_basex/
+  454  ls -ltr /home/software/ipbus/
+  455  ls -ltr /home/software/
+  456  ls -ltr /home/
+  457  ls -ltr /home/msahin/
+  458  ls -ltr /home/alkozyre/
+  459  ls -ltr /home/alkozyre/cernbox/
+  460  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  461  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/kcu105_320Mbps_TOFHIRv2_Ver_1/
+  462  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  463  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  464  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/bundleI2C/
+  465  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/bundleI2C/me0_scripts/
+  466  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/bundleI2C/
+  467  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  468  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  469  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  470  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/example/
+  471  vi /home/alkozyre/cernbox/Alexey_BTL/scripts/example/Test_IC_KCU105_Ver_0.py
+  472  ls -ltr
+  473  vi /home/alkozyre/cernbox/Alexey_BTL/scripts/example/Test_IC_KCU105_Ver_0.py
+  474  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/example/
+  475  vi /home/alkozyre/cernbox/Alexey_BTL/scripts/example/Test_KCU105_Ver_1.py
+  476  who
+  477  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  478  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  479  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/example/
+  480  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  481  tail /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/aa.rawf 
+  482  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  483  tail -n 200 /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/configTOFHIRv2.sh
+  484  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  485  who
+  486  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  487  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/kcu105_320Mbps_TOFHIRv2_Ver_1/
+  488  ls -ltr
+  489  who
+  490  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  491  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  492  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/example/
+  493  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  494  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/kcu105_320Mbps_TOFHIRv2_Ver_1/
+  495  ls -ltr
+  496  ls -ltr soft/
+  497  ls -ltr
+  498  ls -ltr development/
+  499  ls -ltr development/workMTD/
+  500  ls -ltr development/workMTD/SCA/
+  501  ls -ltr development/workMTD/scripts/
+  502  ls -ltr development/workMTD/scripts/example/
+  503  vi development/workMTD/scripts/example/Test_IC_KCU105_Ver_0.py
+  504  who
+  505  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  506  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/kcu105_320Mbps_TOFHIRv2_Ver_1/
+  507  ls -ltr
+  508  who
+  509  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  510  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/kcu105_320Mbps_TOFHIRv2_Ver_1/
+  511  ls -ltr
+  512  ls -ltr development/
+  513  ls -ltr development/workMTD/
+  514  ls -ltr
+  515  ls -ltr development/
+  516  ls -ltr development/workMTD/
+  517  ls -ltr development/workMTD/scripts/
+  518  ls -ltr development/workMTD/tofhir_v2/
+  519  vi development/workMTD/tofhir_v2/readoutTOFHIR_v2.py
+  520  vi development/workMTD/tofhir_v2/readoutTOFHIR.py
+  521  vi development/workMTD/tofhir_v2/readoutTOFHIR_v2.py
+  522  cd development/workMTD/tofhir_v2/
+  523  ls -ltr
+  524  зцв
+  525  pwd
+  526  cd ../
+  527  ls -ltr
+  528  cd tofhir_v2/
+  529  ls -ltr
+  530  ls -ltr /home/
+  531  ls -ltr /home/alkozyre/
+  532  ls -ltr /home/alkozyre/cernbox/
+  533  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  534  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  535  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  536  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  537  ls -ltr
+  538  grep -r readoutTOFHIR.py /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  539  vi /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  540  diff readoutTOFHIR.py /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  541  ls -ltr
+  542  rm readoutTOFHIR.py
+  543  cp readoutTOFHIR.py /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py .
+  544  cp /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py .
+  545  ls -ltr
+  546  diff readoutTOFHIR_v2.py readoutTOFHIR.py
+  547  ls -ltr
+  548  diff readoutTOFHIR.py /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  549  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  550  ls -ltr
+  551  git add readoutTOFHIR_v2.py test_v2.rawf readoutTOFHIR.py Test_SCA_Read_ID_2links.py config_tofhir_v2.json read_DebugRAM_2links.py read_RxRAM_2links.py TOFHIRv2_Config_v2.py real_address_table_2links.xml configTOFHIRv2.sh test.py Real_connections.xml
+  552  git commit -m "corrects for readoutTOFHIR.py"
+  553  git push
+  554  cd ../
+  555  git pull
+  556  cd tofhir_v2/
+  557  ls -ltr
+  558  git push
+  559  ls -ltr
+  560  vi readoutTOFHIR_v2.py
+  561  git add readoutTOFHIR_v2.py
+  562  git commit -m "correct readoutTOFHIR_v2.py"
+  563  git push 
+  564  ls -ltr
+  565  vi readoutTOFHIR_v2.py
+  566  ls -ltr
+  567  vi test_read_json.py
+  568  vi test.json
+  569  python test_read_json.py
+  570  vi test_read_json.py
+  571  mv test_read_json.py test_read_write_json.py
+  572  vi test_read_write_json.py
+  573  python test_read_write_json.py
+  574  ls -ltr
+  575  vi test_read_write_json.py
+  576  python test_read_write_json.py
+  577  vi test_read_write_json.py
+  578  python test_read_write_json.py
+  579  ls -ltr
+  580  vi mapLink_test.json 
+  581  vi test_read_write_json.py
+  582  python test_read_write_json.py
+  583  ls -ltr
+  584  rm mapLink_test.json mapLink_test.txt
+  585  vi test_read_write_json.py
+  586  python test_read_write_json.py
+  587  ls -ltr
+  588  vi test_read_write_json.py
+  589  python test_read_write_json.py
+  590  ls -ltr
+  591  vi test_read_write_json.py
+  592  python test_read_write_json.py
+  593  ls -ltr
+  594  vi person.txt 
+  595  vi test_read_write_json.py
+  596  python test_read_write_json.py
+  597  vi person.txt 
+  598  vi test_read_write_json.py
+  599  python test_read_write_json.py
+  600  ls -ltr
+  601  vi mapLink_test.json
+  602  rm mapLink_test.txt person.txt
+  603  ls -ltr
+  604  vi test_read_write_json.py
+  605  python test_read_write_json.py
+  606  vi mapLink_test.json
+  607  vi test_read_write_json.py
+  608  python test_read_write_json.py
+  609  ls -ltr
+  610  rm test.json
+  611  vi test_read_write_json.py
+  612  ls -ltr
+  613  vi readout_settings_tofhir.json
+  614  vi test_read_write_json.py
+  615  who
+  616  ls -ltr
+  617  vi test_read_write_json.py
+  618  python test_read_write_json.py
+  619  vi mapLink_test.json
+  620  vi test_read_write_json.py
+  621  vi mapLink_test.json
+  622  vi test_read_write_json.py
+  623  vi mapLink_test.json
+  624  python test_read_write_json.py
+  625  vi test_read_write_json.py
+  626  vi mapLink_test.json
+  627  python test_read_write_json.py
+  628  vi test_read_write_json.py
+  629  python test_read_write_json.py
+  630  vi test_read_write_json.py
+  631  vi mapLink_test.json
+  632  python test_read_write_json.py
+  633  vi mapLink_test.json
+  634  python test_read_write_json.py
+  635  vi mapLink_test.json
+  636  vi test_read_write_json.py
+  637  python test_read_write_json.py
+  638  vi test_read_write_json.py
+  639  vi mapLink_test.json
+  640  python test_read_write_json.py
+  641  vi mapLink_test.json
+  642  vi test_read_write_json.py
+  643  python test_read_write_json.py
+  644  vi test_read_write_json.py
+  645  python test_read_write_json.py
+  646  vi test_read_write_json.py
+  647  vi mapLink_test.json
+  648  python test_read_write_json.py
+  649  vi mapLink_test.json
+  650  python test_read_write_json.py
+  651  vi test_read_write_json.py
+  652  python test_read_write_json.py
+  653  vi test_read_write_json.py
+  654  python test_read_write_json.py
+  655  vi test_read_write_json.py
+  656  python test_read_write_json.py
+  657  vi test_read_write_json.py
+  658  python test_read_write_json.py
+  659  vi test_read_write_json.py
+  660  python test_read_write_json.py
+  661  vi test_read_write_json.py
+  662  python test_read_write_json.py
+  663  vi test_read_write_json.py
+  664  exit
+  665  who
+  666  cd development/workMTD/
+  667  ls -ltr
+  668  cd tofhir_v2/
+  669  ls -ltr
+  670  vi readoutTOFHIR.py
+  671  vi TOFHIRv2_Config_v2.py 
+  672  who
+  673  ls -ltr
+  674  ls -ltr /home/alkozyre/
+  675  ls -ltr /home/alkozyre/cernbox/
+  676  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  677  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  678  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/example/
+  679  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  680  ls -ltr
+  681  vi readout_settings_tofhir.json
+  682  vi readoutTOFHIR.py
+  683  vi readout_settings_tofhir.json
+  684  vi readoutTOFHIR.py
+  685  ls -ltr
+  686  vi test_read_write_json.py 
+  687  vi readoutTOFHIR.py
+  688  vi test_read_write_json.py 
+  689  exit
+  690  cd development/workMTD/
+  691  ls -ltr
+  692  cd tofhir_v2/
+  693  ls -ltr
+  694  vi test_read_write_json.py 
+  695  python test_read_write_json.py 
+  696  vi test_read_write_json.py 
+  697  python test_read_write_json.py 
+  698  vi test_read_write_json.py 
+  699  python test_read_write_json.py 
+  700  vi test_read_write_json.py 
+  701  python test_read_write_json.py 
+  702  vi test_read_write_json.py 
+  703  python test_read_write_json.py 
+  704  vi test_read_write_json.py 
+  705  python test_read_write_json.py 
+  706  vi test_read_write_json.py 
+  707  python test_read_write_json.py 
+  708  vi test_read_write_json.py 
+  709  python test_read_write_json.py 
+  710  vi test_read_write_json.py 
+  711  python test_read_write_json.py 
+  712  vi test_read_write_json.py 
+  713  python test_read_write_json.py 
+  714  vi test_read_write_json.py 
+  715  python test_read_write_json.py 
+  716  vi test_read_write_json.py 
+  717  python test_read_write_json.py 
+  718  vi test_read_write_json.py 
+  719  python test_read_write_json.py 
+  720  vi test_read_write_json.py 
+  721  python test_read_write_json.py 
+  722  vi test_read_write_json.py 
+  723  python test_read_write_json.py 
+  724  vi test_read_write_json.py 
+  725  python test_read_write_json.py 
+  726  vi test_read_write_json.py 
+  727  python test_read_write_json.py 
+  728  vi test_read_write_json.py 
+  729  python test_read_write_json.py 
+  730  vi test_read_write_json.py 
+  731  python test_read_write_json.py 
+  732  vi test_read_write_json.py 
+  733  python test_read_write_json.py 
+  734  vi test_read_write_json.py 
+  735  python test_read_write_json.py 
+  736  vi test_read_write_json.py 
+  737  python test_read_write_json.py 
+  738  vi test_read_write_json.py 
+  739  python test_read_write_json.py 
+  740  vi test_read_write_json.py 
+  741  python test_read_write_json.py 
+  742  vi test_read_write_json.py 
+  743  python test_read_write_json.py 
+  744  vi test_read_write_json.py 
+  745  python test_read_write_json.py 
+  746  vi test_read_write_json.py 
+  747  python test_read_write_json.py 
+  748  vi test_read_write_json.py 
+  749  python test_read_write_json.py 
+  750  vi test_read_write_json.py 
+  751  python test_read_write_json.py 
+  752  vi test_read_write_json.py 
+  753  python test_read_write_json.py 
+  754  vi test_read_write_json.py 
+  755  python test_read_write_json.py 
+  756  vi test_read_write_json.py 
+  757  python test_read_write_json.py 
+  758  vi test_read_write_json.py 
+  759  python test_read_write_json.py 
+  760  vi test_read_write_json.py 
+  761  python test_read_write_json.py 
+  762  vi test_read_write_json.py 
+  763  python test_read_write_json.py 
+  764  vi test_read_write_json.py 
+  765  python test_read_write_json.py 
+  766  vi test_read_write_json.py 
+  767  python test_read_write_json.py 
+  768  vi test_read_write_json.py 
+  769  python test_read_write_json.py 
+  770  vi test_read_write_json.py 
+  771  python test_read_write_json.py 
+  772  vi test_read_write_json.py 
+  773  python test_read_write_json.py 
+  774  vi test_read_write_json.py 
+  775  python test_read_write_json.py 
+  776  vi test_read_write_json.py 
+  777  python test_read_write_json.py 
+  778  vi test_read_write_json.py 
+  779  python test_read_write_json.py 
+  780  vi test_read_write_json.py 
+  781  python test_read_write_json.py 
+  782  vi test_read_write_json.py 
+  783  python test_read_write_json.py 
+  784  vi test_read_write_json.py 
+  785  python test_read_write_json.py 
+  786  vi test_read_write_json.py 
+  787  python test_read_write_json.py 
+  788  vi test_read_write_json.py 
+  789  python test_read_write_json.py 
+  790  vi test_read_write_json.py 
+  791  python test_read_write_json.py 
+  792  vi test_read_write_json.py 
+  793  python test_read_write_json.py 
+  794  vi test_read_write_json.py 
+  795  python test_read_write_json.py 
+  796  vi test_read_write_json.py 
+  797  python test_read_write_json.py 
+  798  vi test_read_write_json.py 
+  799  python test_read_write_json.py 
+  800  vi test_read_write_json.py 
+  801  python test_read_write_json.py 
+  802  vi test_read_write_json.py 
+  803  python test_read_write_json.py 
+  804  vi test_read_write_json.py 
+  805  python test_read_write_json.py 
+  806  vi test_read_write_json.py 
+  807  python test_read_write_json.py 
+  808  vi test_read_write_json.py 
+  809  python test_read_write_json.py 
+  810  vi test_read_write_json.py 
+  811  python test_read_write_json.py 
+  812  vi test_read_write_json.py 
+  813  python test_read_write_json.py 
+  814  vi test_read_write_json.py 
+  815  python test_read_write_json.py 
+  816  vi test_read_write_json.py 
+  817  python test_read_write_json.py 
+  818  vi test_read_write_json.py 
+  819  python test_read_write_json.py 
+  820  vi test_read_write_json.py 
+  821  python test_read_write_json.py 
+  822  vi test_read_write_json.py 
+  823  python test_read_write_json.py 
+  824  vi test_read_write_json.py 
+  825  python test_read_write_json.py 
+  826  vi test_read_write_json.py 
+  827  python test_read_write_json.py 
+  828  vi test_read_write_json.py 
+  829  python test_read_write_json.py 
+  830  vi test_read_write_json.py 
+  831  python test_read_write_json.py 
+  832  vi test_read_write_json.py 
+  833  ls -ltr
+  834  vi readout_settings_tofhir.json
+  835  rm readout_settings_tofhir.json
+  836  mv mapLink_test.json readout_settings_tofhir.json
+  837  vi readout_settings_tofhir.json
+  838  vi test_read_write_json.py 
+  839  python test_read_write_json.py 
+  840  vi test_read_write_json.py 
+  841  who
+  842  cd development/workMTD/
+  843  ls -ltr
+  844  cd tofhir_v2/
+  845  ls -ltr
+  846  who
+  847  vi readoutTOFHIR_v2.py 
+  848  vi mapLink_test.json 
+  849  vi readoutTOFHIR_v2.py 
+  850  vi mapLink_test.json 
+  851  vi readoutTOFHIR_v2.py 
+  852  vi mapLink_test.json 
+  853  vi readoutTOFHIR_v2.py 
+  854  vi mapLink_test.json 
+  855  vi readoutTOFHIR_v2.py 
+  856  vi mapLink_test.json 
+  857  vi readoutTOFHIR_v2.py 
+  858  ls -ltr /home/
+  859  ls -ltr
+  860  python readoutTOFHIR_v2.py
+  861  python readoutTOFHIR_v2.py -h
+  862  ls -ltr
+  863  vi test.rawf
+  864  python readoutTOFHIR_v2.py -f test -n 1
+  865  ls -ltr
+  866  python readoutTOFHIR_v2.py -h
+  867  python readoutTOFHIR.py 
+  868  python readoutTOFHIR.py  test 1
+  869  ls -ltr
+  870  vi readoutTOFHIR_v2.py
+  871  ls- ltr
+  872  ls -ltr
+  873  chmod +x readoutTOFHIR_v2.py
+  874  ls -ltr
+  875  chmod +x readout_settings_tofhir.json
+  876  ls -ltr
+  877  chmod 777 readout_settings_tofhir.json
+  878  ls -ltr
+  879  chmod 777 readoutTOFHIR_v2.py
+  880  ls- ltr
+  881  ls -ltr
+  882  git add readoutTOFHIR_v2.py readout_settings_tofhir.json test_read_write_json.py 
+  883  git commit -m "modification readoutTOFHIR_v2.py is done"
+  884  git push
+  885  ls -ltr
+  886  vi readoutTOFHIR_v2.py
+  887  git add readoutTOFHIR_v2.py
+  888  git commit -m "modification readoutTOFHIR_v2.py is done 2"
+  889  git push
+  890  python readoutTOFHIR_v2.py -h
+  891  pwd
+  892  ls -ltr
+  893  python readoutTOFHIR_v2.py -h
+  894  vi readoutTOFHIR_v2.py
+  895  python readoutTOFHIR_v2.py -h
+  896  vi readoutTOFHIR_v2.py
+  897  git add readoutTOFHIR_v2.py
+  898  git commit -m "modification readoutTOFHIR_v2.py is done 3"
+  899  git push
+  900  python readoutTOFHIR_v2.py -h
+  901  pwd
+  902  cd development/workMTD/
+  903  ls -ltr
+  904  cd tofhir_v2/
+  905  ls -ltr
+  906  vi tofhir_tools.py
+  907  cd development/workMTD/
+  908  ls -ltr
+  909  cd tofhir_v2/
+  910  ls -ltr
+  911  who
+  912  ls -ltr
+  913  vi readoutTOFHIR_v2.py
+  914  ls -ltr
+  915  vi readoutTOFHIR_v3.py
+  916  ps x
+  917  who
+  918  cd development/workMTD/tofhir_v2/
+  919  ls -ltr
+  920  git add readoutTOFHIR_v3.py
+  921  git commit -m "add class"
+  922  git push
+  923  exit
+  924  ls -ltr
+  925  cd development/workMTD/tofhir_v2/
+  926  ls -ltr
+  927  git pull
+  928  who
+  929  ls -ltr
+  930  vi readoutTOFHIR_v3.py
+  931  ls -ltr
+  932  exit
+  933  who
+  934  ls -ltr
+  935  cd development/workMTD/tofhir_v2/
+  936  ls- ltr
+  937  ls -ltr
+  938  git pull
+  939  ls -ltr
+  940  vi readTOFHIR_tools.py
+  941  exit
+  942  cd development/workMTD/tofhir_v2/
+  943  git pull
+  944  ls -ltr
+  945  exit
+  946  who
+  947  /home/software/mtd-daq/sw_daq_tofhir2/build/test.json
+  948  ￼
+  949  ls -ltr /home/software/mtd-daq/sw_daq_tofhir2/build/test.json
+  950  vi /home/software/mtd-daq/sw_daq_tofhir2/build/test.json
+  951  ls -ltr /home/software/mtd-daq/sw_daq_tofhir2/build/
+  952  ды -дек
+  953  ls -ltr
+  954  cd development/
+  955  ls -ltr
+  956  cd workMTD/
+  957  ls -ltr
+  958  cd tofhir_v2/
+  959  ls -ltr
+  960  мш readoutTOFHIR.py
+  961  vi readoutTOFHIR.py
+  962  python readoutTOFHIR.py test 1
+  963  vi test.rawf 
+  964  mv test.rawf test_old_script.rawf
+  965  ls -ltr
+  966  ls -ltr /home/alkozyre/
+  967  ls -ltr /home/alkozyre/cernbox/
+  968  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/
+  969  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  970  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/example/
+  971  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/
+  972  ls -ltr /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/
+  973  dirr readoutTOFHIR.py /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  974  diff readoutTOFHIR.py /home/alkozyre/cernbox/Alexey_BTL/scripts/SCA_work_scripts/readoutTOFHIR.py
+  975  ls -ltr
+  976  vi readoutTOFHIR_v2.py
+  977  python readoutTOFHIR_v2.py -h
+  978  python readoutTOFHIR_v2.py -f test_v2 1 
+  979  python readoutTOFHIR_v2.py -f test_v2 -n 1 
+  980  ls -ltr
+  981  vi test_v2.rawf
+  982  python readoutTOFHIR_v3.py -h
+  983  python readoutTOFHIR_v2.py -f test_v3 -n 1 
+  984  ls -ltr
+  985  vi test_v3.rawf
+  986  chmod 777 test_v2.rawf test_old_script.rawf test_v3.rawf
+  987  ls- ltr
+  988  ls -ltr
+  989  зцв
+  990  pwd
+  991  vi /home/ivovtin/development/workMTD/tofhir_v2/test_v2.rawf
+  992  vi /home/ivovtin/development/workMTD/tofhir_v2/test_v3.rawf
+  993  cd ../../
+  994  ls -ltr
+  995  cd ../
+  996  ls -ltr
+  997  vi ~/.bashrc 
+  998  vi .bashrc 
+  999  source ~/.bashrc 
+ 1000  ls -ltr
+ 1001  vi /home/software/Xilinx/DocNav/.settings64-DocNav.sh
+ 1002  ls -ltr /home/software/Xilinx/DocNav
+ 1003  ls -ltr /home/software/Xilinx/DocNav/resources/
+ 1004  vi /home/software/Xilinx/Vivado/2018.3/.settings64-Vivado.sh
+ 1005  ls -ltr /home/software/Xilinx/Vivado/2018.3/bin
+ 1006  vivado
+ 1007  /home/ivovtin/development/workMTD/tofhir_v2/test_v3.rawf
+ 1008  ￼
+ 1009  vi /home/ivovtin/development/workMTD/tofhir_v2/test_v3.rawf
+ 1010  ls -ltr
+ 1011  cd development/workMTD/
+ 1012  sl -ltr
+ 1013  ls -ltr
+ 1014  cd tofhir_v2/
+ 1015  ls -ltr
+ 1016  vi test_v3.rawf
+ 1017  python readoutTOFHIR_v2.py -f test_v4 -n 1 
+ 1018  python readoutTOFHIR.py 
+ 1019  #python readoutTOFHIR.py test 1
+ 1020  ls -ltr
+ 1021  vi test_old_script.rawf
+ 1022  python readoutTOFHIR.py test 1
+ 1023  ls -ltr
+ 1024  vi test.rawf
+ 1025  ls -ltr
+ 1026  vi /home/ivovtin/development/workMTD/tofhir_v2/test_v3.rawf
+ 1027  ls -ltr
+ 1028  vi readoutTOFHIR_v3.py
+ 1029  python readoutTOFHIR_v3.py -f test_v3 -n 1 
+ 1030  history 
+ 1031  history > out.txt

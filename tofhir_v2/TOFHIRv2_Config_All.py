@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 
 
-    Init_Lnk0_modules   = hw.getNode("Init_TOFHIR_EC_IC_modules")
+    Init_Lnk0_modules   = hw.getNode("Init_TOFHIR_EC_IC_modules0")
     Init_Lnk1_modules   = hw.getNode("Init_TOFHIR_EC_IC_modules1")
 
     tx0RAM           = hw.getNode("Tx0BRAM")
@@ -211,7 +211,7 @@ if __name__ == '__main__':
     cfgValue[0] = 0xC0000000
     cfgValue[1] = 0x00000070
     cfgValue[2] = 0x00000C00
-    cfgValue[3] = 0x01902000   #<<<  01902040
+    cfgValue[3] = 0x01902040   #<<<  01902040
     cfgValue[4] = 0x18306080
     cfgValue[5] = 0xC183060C 
     cfgValue[6] = 0x0B10003C 
